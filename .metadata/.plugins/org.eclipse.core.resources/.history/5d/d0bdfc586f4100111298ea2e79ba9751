@@ -1,0 +1,275 @@
+package TestCase;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import PageObject.Header;
+import TestBase.BaseClass;
+import Utilities.ExtentReportManager;
+ public class TC001_Header extends BaseClass{
+	
+	@Test(groups = {"Sanity"})
+    public void FreeShipping()
+    {
+        Header header = new Header(driver);
+
+        logger.info("Verifying free shipping validation in Header");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Free Shipping Visibility");
+
+        Assert.assertTrue(header.isFreeShippingVisible(), "Free Shipping option is not visible in header");
+        logger.info("Free Shipping is visible in header");
+        
+        ExtentReportManager.test.info("TC001 Header Sanity -> Free Shipping Text ");
+        String actualText = header.getFreeShippingText();
+        Assert.assertTrue(
+            actualText.contains("Free delivery on all online orders above 500 AED"),
+            "Expected text is not displayed. Actual text: " + actualText );
+       logger.info("Free Shipping text validation passed");
+       System.out.println(actualText);
+    }
+	
+	@Test(groups = {"Sanity"})
+    public void Warrenty()
+    {
+        Header header = new Header(driver);
+
+        logger.info("Verifying Warrenty validation in Header");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Warrenty Visibility");
+
+        Assert.assertTrue(header.isWarrantyVisible(), "Warranty option is not visible in header");
+        logger.info("Warranty is visible in header");
+        
+        ExtentReportManager.test.info("TC001 Header Sanity -> Warrenty Text ");
+        String actualText = header.getWarrantyText();
+        Assert.assertTrue(
+            actualText.contains("2-year warranty against manufacturing defects"),
+            "Expected text is not displayed. Actual text: " + actualText );
+       logger.info("Warrenty text validation passed");
+       System.out.println(actualText);
+    }
+	
+	@Test(groups = {"Sanity"})
+    public void PaymentFlexibility()
+    {
+        Header header = new Header(driver);
+        
+        logger.info("Verifying Payment Flexibility validation in Header");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Payment Flexibility Visibility");
+
+        Assert.assertTrue(header.isPaymentFlexibilityVisible(), "Payment Flexibility option is not visible in header");
+        logger.info("Payment Flexibility is visible in header");
+
+        ExtentReportManager.test.info("TC001 Header Sanity -> Payment Flexibility Text ");
+        String actualText = header.getPaymentFlexibilityText();
+        Assert.assertTrue(
+            actualText.contains("Payment in installments, Select Tabby / Tamara"),
+            "Expected text is not displayed. Actual text: " + actualText );
+       logger.info("Payment Flexibility text validation passed");
+       System.out.println(actualText);
+    }
+	
+	@Test(groups = {"Sanity"})
+    public void FreeInteriorDesign()
+    {
+        Header header = new Header(driver);
+        
+        logger.info("Verifying Free Interior Design validation in Header");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Free Interior Design Visibility");
+
+        Assert.assertTrue(header.isFreeInteriorDesignVisible(), "Free Interior Design option is not visible in header");
+        logger.info("Free Interior Design is visible in header");
+        
+        ExtentReportManager.test.info("TC001 Header Sanity -> Free Interior Design Text");
+        String actualText = header.getFreeInteriorDesignText();
+        Assert.assertTrue(
+            actualText.contains("Our interior designer is ready to help you bring your ideas to life. Book now"),
+            "Expected text is not displayed. Actual text: " + actualText );
+       logger.info("Free Interior Design text validation passed");
+       System.out.println(actualText);
+    }
+	
+	@Test(groups = {"Sanity"})
+    public void SiteLogo()
+    {
+        Header header = new Header(driver);
+
+        logger.info("Verifying Site Logo Design validation in Header"); 
+        ExtentReportManager.test.info("TC001 Header Sanity -> Site Logo Visibility");
+        
+        Assert.assertTrue(header.isSiteLogoVisible(), "Site Logo is not visible in header");
+        logger.info("Site Logo is visible in header");
+        
+        logger.info("Verifying Site Logo is Clickable & URL redirection");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Site URL redirection on click");
+        header.clickLogo(); 
+        String actualUrl = driver.getCurrentUrl();
+        Assert.assertEquals( actualUrl,
+            "https://www.alhuzaifa.com/en/",
+            "Landing page URL is not matching after clicking"
+        );
+        logger.info("URL validation passed. Actual URL: " + actualUrl);
+        System.out.println("URL validation passed. Actual URL: " + actualUrl);
+        logger.info("Site Logo is Clicked and is landing on correct URL");
+    }
+	
+	@Test(groups = {"Sanity"})
+    public void Signin()
+    {
+        Header header = new Header(driver);
+
+        logger.info("Verifying Signin validation in Header");
+        ExtentReportManager.test.info("TC001 Header Sanity -> SIgnin Visibility");
+        
+        Assert.assertTrue(header.isSiginInLogoVisible(), "Signin is not visible in header");
+        logger.info("Signin is visible in header");
+        
+        logger.info("Verifying Signin and Register Logo is present in header");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Login/Signin Click and URL redirection");
+         
+        header.Signin();
+        String actualUrl1 = driver.getCurrentUrl();
+        Assert.assertEquals( actualUrl1,
+            "https://www.alhuzaifa.com/en/customer/account/login/referer/aHR0cHM6Ly93d3cuYWxodXphaWZhLmNvbS9lbi9jdXN0b21lci9hY2NvdW50L2luZGV4Lw~~/",
+            "Landing page URL is not matching after clicking"
+        );
+        logger.info("URL validation passed. Actual URL: " + actualUrl1);
+        System.out.println("Sign In URL validation passed. Actual URL: " + actualUrl1);
+        logger.info("Sign-In is Clicked and is landing on correct URL");
+        
+        ExtentReportManager.test.info("TC001 Header Sanity -> Register Click and URL redirection");
+        header.Register();;
+        String actualUrl2 = driver.getCurrentUrl();
+        Assert.assertEquals( actualUrl2,
+            "https://www.alhuzaifa.com/en/customer/account/create/",
+            "Landing page URL is not matching after clicking"
+        );
+        logger.info("URL validation passed. Actual URL: " + actualUrl2);
+        System.out.println("Register URL validation passed. Actual URL: " + actualUrl2);
+        logger.info("Register is Clicked and is landing on correct URL");
+    }
+	
+	@Test(groups = {"Sanity"})
+    public void Wishlist()
+    {
+        Header header = new Header(driver);
+
+        logger.info("Verifying Wishlist validation in Header");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Wishlist Visibility");
+        
+        Assert.assertTrue(header.isWishlistVisible(), "Wishlist is not visible in header");
+        logger.info("Wishlist is visible in header");
+        
+        logger.info("Verifying Wishlist Click and URL redirection");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Wishlist Click and URL redirection");
+         
+        header.Wishlist();
+        String actualUrl = driver.getCurrentUrl();
+        Assert.assertEquals( actualUrl,
+            "https://www.alhuzaifa.com/en/customer/account/login/referer/aHR0cHM6Ly93d3cuYWxodXphaWZhLmNvbS9lbi93aXNobGlzdC8~/",
+            "Landing page URL is not matching after clicking"
+        );
+        logger.info("URL validation passed. Actual URL: " + actualUrl);
+        System.out.println("Sign In URL validation passed. Actual URL: " + actualUrl);
+        logger.info("Wishlist is Clicked and is landing on correct URL");
+    }
+	
+	@Test(groups = {"Sanity"})
+    public void zLanguageSwitcher()
+    {
+        Header header = new Header(driver);
+
+        logger.info("Verifying Lanaguage Switcher validation in Header");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Lanaguage Switcher Visibility");
+        
+        Assert.assertTrue(header.isEngLangSwitchVisible(), "Language Switcher is not visible in header");
+        logger.info("Language Switcher is visible in header");
+        
+        logger.info("Verifying Arabic site Redirection");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Arabic site Redirection");
+         
+        header.LangSwitch();
+        Assert.assertTrue(header.isARLangSwitchVisible(), "Arabic site Language Switcher is not visible in header");
+        logger.info("Arabic site is Clicked and is landing on correct URL");
+    }
+	
+	@Test(groups = {"Sanity"})
+    public void Cart()
+    {
+        Header header = new Header(driver);
+
+        logger.info("Verifying Cart validation in Header");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Cart Validation Visibility");
+        
+        Assert.assertTrue(header.isCartIconVisible(), "Cart is not visible in header");
+        logger.info("Cart is visible in header");
+        
+        logger.info("Verifying Minicart");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Mini Cart Validation");
+         
+        header.CartIcon();
+        Assert.assertTrue(header.isMiniCartVisible(), "Mini Cart is not visible in header");
+        logger.info("Mini cart is popup opens on click");
+        header.CloseCartIcon();
+    }
+	
+	@Test(groups = {"Sanity"})
+    public void CountrySwitcher()
+    {
+        Header header = new Header(driver);
+
+        logger.info("Verifying Country Switcher validation in Header");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Country Switcher Visibility");
+        
+        Assert.assertTrue(header.isUAEStoreVisible(), "Country Switcher is not visible in header");
+        logger.info("Country Switcher is visible in header");
+        
+        logger.info("Verifying Click and URL redirection for KSA");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Click and URL redirection for KSA store");
+         
+        header.Saudi();
+        String KSAURL = driver.getCurrentUrl();
+        Assert.assertTrue( KSAURL.contains("/sa-en/"),
+        	    "Landing page URL is not matching after clicking. Actual URL: " + KSAURL);
+            
+        logger.info("URL validation passed. Actual URL: " + KSAURL);
+        System.out.println("KSA country switcher validation passed. Actual URL: " + KSAURL);
+        logger.info("KSA is Clicked and is landing on correct URL");
+        
+        logger.info("Verifying Click and URL redirection for QATAR");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Click and URL redirection for QATAR store");
+         
+        header.QATAR();
+        String QatarURL = driver.getCurrentUrl();
+        Assert.assertTrue( QatarURL.contains("https://www.alhuzaifa.com/qa-en/"),
+        	    "Landing page URL is not matching after clicking. Actual URL: " + QatarURL);
+            
+        logger.info("URL validation passed. Actual URL: " + QatarURL);
+        System.out.println("Qatar country switcher validation passed. Actual URL: " + QatarURL);
+        logger.info("Qatar is Clicked and is landing on correct URL");
+        
+        logger.info("Verifying Click and URL redirection for OMAN");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Click and URL redirection for OMAN store");
+        header.OMAN();
+        String OmanURL = driver.getCurrentUrl();
+        Assert.assertTrue( OmanURL.contains("https://www.alhuzaifa.com/om-en/"),
+        	    "Landing page URL is not matching after clicking. Actual URL: " + OmanURL);
+            
+        logger.info("URL validation passed. Actual URL: " + OmanURL);
+        System.out.println("OMAN country switcher validation passed. Actual URL: " + OmanURL);
+        logger.info("OMAN is Clicked and is landing on correct URL");
+        
+        logger.info("Verifying Click and URL redirection for Bahrain");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Click and URL redirection for Bahrain store");
+        header.BAHRAIN();
+        String BahrainURL = driver.getCurrentUrl();
+        Assert.assertTrue( BahrainURL.contains("https://www.alhuzaifa.com/bh-en/"),
+        	    "Landing page URL is not matching after clicking. Actual URL: " + BahrainURL);
+            
+        logger.info("URL validation passed. Actual URL: " + BahrainURL);
+        System.out.println("Bahrain country switcher validation passed. Actual URL: " + BahrainURL);
+        logger.info("Bahrain is Clicked and is landing on correct URL");
+        
+        header.UAE();
+    }
+
+}

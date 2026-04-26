@@ -1,0 +1,70 @@
+package PageObject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+
+public class Header extends BasePage{
+	public Header(WebDriver driver)
+	{
+		super(driver);
+	}
+	
+	@FindBy(xpath = "(//span[contains(text(),'Free shipping')])[2]")
+	WebElement FreeShipping;
+	@FindBy(xpath = "(//div[contains(text(),'Free delivery on all online orders above 500 AED')])[2]")
+	WebElement FreeShippingText;
+	
+	@FindBy (xpath= "(//span[contains(text(),'Warranty')])[2]")
+	WebElement warrenty;
+	
+	@FindBy(xpath = "(//span[contains(text(),'Payment flexibility')])[2]")
+	WebElement PaymentFlexibility;
+	
+	@FindBy(xpath = "(//span[contains(text(),'Free Interior Design')])[2]")
+	WebElement FreeInteriorDesign;
+	
+	 public boolean isFreeShippingVisible()
+	    {
+	        return isDisplayed(FreeShipping);
+	    }
+
+	    public boolean isWarrantyVisible()
+	    {
+	        return isDisplayed(warrenty);
+	    }
+
+	    public boolean isPaymentFlexibilityVisible()
+	    {
+	        return isDisplayed(PaymentFlexibility);
+	    }
+
+	    public boolean isFreeInteriorDesignVisible()
+	    {
+	        return isDisplayed(FreeInteriorDesign);
+	    }
+
+	    public String getFreeShippingText()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(FreeShipping).perform();
+	        return getText(FreeShippingText);
+	    }
+
+	    public String getWarrantyText()
+	    {
+	        return getText(warrenty);
+	    }
+
+	    public String getPaymentFlexibilityText()
+	    {
+	        return getText(PaymentFlexibility);
+	    }
+
+	    public String getFreeInteriorDesignText()
+	    {
+	        return getText(FreeInteriorDesign);
+	    }
+
+}

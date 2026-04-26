@@ -1,0 +1,175 @@
+14:20:49.976 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\Al_Huzaifa\AL-Huzaifa\testng.xml"
+14:20:50.282 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+14:20:51.037 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+14:20:51.573 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 6.0.0
+14:20:52.350 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=147 in cache (valid until 15:11:47 24/04/2026 IST)
+14:20:52.353 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome147=147.0.7727.117 in cache (valid until 11:06:44 25/04/2026 IST)
+14:20:52.365 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+14:20:52.425 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 147.0.7727.117 found in cache
+14:20:52.428 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+14:21:07.522 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+14:21:07.586 [main] INFO  TestCase.TC001_Header - Verifying free shipping validation in Header
+14:21:07.743 [main] INFO  TestCase.TC001_Header - Free Shipping is visible in header
+14:21:08.100 [main] INFO  TestCase.TC001_Header - Free Shipping text validation passed
+14:21:08.126 [main] INFO  TestCase.TC001_Header - Verifying Payment Flexibility validation in Header
+14:21:08.249 [main] INFO  TestCase.TC001_Header - Payment Flexibility is visible in header
+14:21:09.058 [main] INFO  TestCase.TC001_Header - Verifying Warrenty validation in Header
+14:21:09.171 [main] INFO  TestCase.TC001_Header - Warranty is visible in header
+14:21:09.562 [main] INFO  TestCase.TC001_Header - Warrenty text validation passed
+14:21:10.086 [main] INFO  TestCase.TC001_Header - Browser closed successfully
+14:22:07.392 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\smile\AppData\Local\Temp\testng-eclipse-813391904\testng-customsuite.xml"
+14:22:07.947 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+14:22:07.951 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+14:22:07.954 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+14:22:07.956 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+14:22:07.956 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+14:22:07.956 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+14:22:07.957 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+14:22:07.957 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+14:22:07.968 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 7 ms.
+14:22:07.983 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 14 ms.
+14:22:07.986 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+14:22:07.986 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+14:22:07.988 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+14:22:07.988 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+14:22:07.989 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+14:22:07.990 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+14:22:07.994 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+14:22:07.994 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+14:22:07.995 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+14:22:07.995 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+14:22:07.998 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+14:22:07.999 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+14:22:07.999 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+14:22:07.999 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+14:22:08.001 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+14:22:08.007 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 6 ms.
+14:22:08.010 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+14:22:08.010 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+14:22:08.011 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+14:22:08.011 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+14:22:08.021 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\smile\AppData\Local\Temp\testng-eclipse-813391904\testng-customsuite.xml
+
+14:22:08.046 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 7 ms.
+14:22:08.333 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@efde75f: 98 ms
+14:22:08.354 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@11eadcba: 20 ms
+14:22:08.377 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@1e1d3956: 22 ms
+14:22:08.391 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@546ccad7: 14 ms
+14:22:08.402 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@5b04476e: 10 ms
+14:22:08.403 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@5ad10c1a: 1 ms
+14:23:02.713 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\Al_Huzaifa\AL-Huzaifa\testng.xml"
+14:23:02.844 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+14:23:03.227 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+14:23:03.615 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 6.0.0
+14:23:04.838 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=147 in cache (valid until 15:11:47 24/04/2026 IST)
+14:23:04.840 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome147=147.0.7727.117 in cache (valid until 11:06:44 25/04/2026 IST)
+14:23:04.841 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+14:23:04.916 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 147.0.7727.117 found in cache
+14:23:04.919 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+14:23:19.871 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+14:23:19.978 [main] INFO  TestCase.TC001_Header - Verifying free shipping validation in Header
+14:23:20.117 [main] INFO  TestCase.TC001_Header - Free Shipping is visible in header
+14:23:20.590 [main] INFO  TestCase.TC001_Header - Free Shipping text validation passed
+14:23:20.645 [main] INFO  TestCase.TC001_Header - Verifying Payment Flexibility validation in Header
+14:23:20.868 [main] INFO  TestCase.TC001_Header - Payment Flexibility is visible in header
+14:23:21.701 [main] INFO  TestCase.TC001_Header - Verifying Warrenty validation in Header
+14:23:21.800 [main] INFO  TestCase.TC001_Header - Warranty is visible in header
+14:23:22.188 [main] INFO  TestCase.TC001_Header - Warrenty text validation passed
+14:23:22.646 [main] INFO  TestCase.TC001_Header - Browser closed successfully
+14:26:06.886 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\Al_Huzaifa\AL-Huzaifa\testng.xml"
+14:26:07.019 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+14:26:07.429 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+14:26:07.930 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 6.0.0
+14:26:09.173 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=147 in cache (valid until 15:11:47 24/04/2026 IST)
+14:26:09.175 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome147=147.0.7727.117 in cache (valid until 11:06:44 25/04/2026 IST)
+14:26:09.176 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+14:26:09.227 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 147.0.7727.117 found in cache
+14:26:09.229 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+14:26:23.928 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+14:26:23.986 [main] INFO  TestCase.TC001_Header - Verifying free shipping validation in Header
+14:26:24.136 [main] INFO  TestCase.TC001_Header - Free Shipping is visible in header
+14:26:24.614 [main] INFO  TestCase.TC001_Header - Free Shipping text validation passed
+14:26:24.641 [main] INFO  TestCase.TC001_Header - Verifying Payment Flexibility validation in Header
+14:26:24.756 [main] INFO  TestCase.TC001_Header - Payment Flexibility is visible in header
+14:26:25.638 [main] INFO  TestCase.TC001_Header - Verifying Warrenty validation in Header
+14:26:25.743 [main] INFO  TestCase.TC001_Header - Warranty is visible in header
+14:26:26.172 [main] INFO  TestCase.TC001_Header - Warrenty text validation passed
+14:26:26.646 [main] INFO  TestCase.TC001_Header - Browser closed successfully
+14:28:33.653 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\Al_Huzaifa\AL-Huzaifa\testng.xml"
+14:28:33.791 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+14:28:34.174 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+14:28:34.556 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 6.0.0
+14:28:35.567 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=147 in cache (valid until 15:11:47 24/04/2026 IST)
+14:28:35.569 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome147=147.0.7727.117 in cache (valid until 11:06:44 25/04/2026 IST)
+14:28:35.570 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+14:28:35.602 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 147.0.7727.117 found in cache
+14:28:35.604 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+14:28:49.266 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+14:28:49.364 [main] INFO  TestCase.TC001_Header - Verifying free shipping validation in Header
+14:28:49.543 [main] INFO  TestCase.TC001_Header - Free Shipping is visible in header
+14:28:50.067 [main] INFO  TestCase.TC001_Header - Free Shipping text validation passed
+14:28:50.110 [main] INFO  TestCase.TC001_Header - Verifying Payment Flexibility validation in Header
+14:28:50.323 [main] INFO  TestCase.TC001_Header - Payment Flexibility is visible in header
+14:28:50.789 [main] INFO  TestCase.TC001_Header - Verifying Warrenty validation in Header
+14:28:50.980 [main] INFO  TestCase.TC001_Header - Warranty is visible in header
+14:28:51.457 [main] INFO  TestCase.TC001_Header - Warrenty text validation passed
+14:28:51.958 [main] INFO  TestCase.TC001_Header - Browser closed successfully
+14:34:07.688 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\Al_Huzaifa\AL-Huzaifa\testng.xml"
+14:34:07.853 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+14:34:08.393 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+14:34:08.995 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 6.0.0
+14:34:09.888 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=147 in cache (valid until 15:11:47 24/04/2026 IST)
+14:34:09.892 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome147=147.0.7727.117 in cache (valid until 11:06:44 25/04/2026 IST)
+14:34:09.893 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+14:34:09.957 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 147.0.7727.117 found in cache
+14:34:09.960 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+14:34:25.662 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+14:34:25.891 [main] INFO  TestCase.TC001_Header - Free Interior Design is visible in header
+14:34:26.339 [main] INFO  TestCase.TC001_Header - Free Interior Design text validation passed
+14:34:26.339 [main] INFO  TestCase.TC001_Header - Header sanity validation completed successfully
+14:34:26.390 [main] INFO  TestCase.TC001_Header - Verifying free shipping validation in Header
+14:34:26.601 [main] INFO  TestCase.TC001_Header - Free Shipping is visible in header
+14:34:27.049 [main] INFO  TestCase.TC001_Header - Free Shipping text validation passed
+14:34:27.068 [main] INFO  TestCase.TC001_Header - Verifying Payment Flexibility validation in Header
+14:34:27.258 [main] INFO  TestCase.TC001_Header - Payment Flexibility is visible in header
+14:34:27.678 [main] INFO  TestCase.TC001_Header - Payment Flexibility text validation passed
+14:34:27.703 [main] INFO  TestCase.TC001_Header - Verifying Warrenty validation in Header
+14:34:27.908 [main] INFO  TestCase.TC001_Header - Warranty is visible in header
+14:34:28.392 [main] INFO  TestCase.TC001_Header - Warrenty text validation passed
+14:34:29.029 [main] INFO  TestCase.TC001_Header - Browser closed successfully
+14:35:34.318 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\Al_Huzaifa\AL-Huzaifa\testng.xml"
+14:35:34.475 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+14:35:34.940 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+14:35:35.430 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 6.0.0
+14:35:36.504 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=147 in cache (valid until 15:11:47 24/04/2026 IST)
+14:35:36.506 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome147=147.0.7727.117 in cache (valid until 11:06:44 25/04/2026 IST)
+14:35:36.507 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+14:35:36.559 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 147.0.7727.117 found in cache
+14:35:36.561 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+14:35:51.619 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+14:35:52.013 [main] INFO  TestCase.TC001_Header - Free Interior Design is visible in header
+14:35:52.594 [main] INFO  TestCase.TC001_Header - Free Interior Design text validation passed
+14:35:52.594 [main] INFO  TestCase.TC001_Header - Header sanity validation completed successfully
+14:35:52.646 [main] INFO  TestCase.TC001_Header - Verifying free shipping validation in Header
+14:35:52.817 [main] INFO  TestCase.TC001_Header - Free Shipping is visible in header
+14:35:53.238 [main] INFO  TestCase.TC001_Header - Free Shipping text validation passed
+14:35:53.248 [main] INFO  TestCase.TC001_Header - Verifying Payment Flexibility validation in Header
+14:35:53.449 [main] INFO  TestCase.TC001_Header - Payment Flexibility is visible in header
+14:35:53.902 [main] INFO  TestCase.TC001_Header - Payment Flexibility text validation passed
+14:35:53.918 [main] INFO  TestCase.TC001_Header - Verifying Warrenty validation in Header
+14:35:54.142 [main] INFO  TestCase.TC001_Header - Warranty is visible in header
+14:35:54.622 [main] INFO  TestCase.TC001_Header - Warrenty text validation passed
+14:35:55.140 [main] INFO  TestCase.TC001_Header - Browser closed successfully

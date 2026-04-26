@@ -1,0 +1,33 @@
+package TestCase;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class CodeRun {
+	public static void main(String[] args) throws InterruptedException {
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.get("https://www.alhuzaifa.com/en/");
+        WebElement closePopup = driver.findElement(
+        	    By.xpath("//button[@type='button' and contains(@class,'absolute') and contains(@class,'right-2.5')]")
+        	);
+        closePopup.click();
+        System.out.println("Welcome popup closed");
+        
+        WebElement UAE= driver.findElement(By.xpath("(//span[contains(text(),'UAE')])[2]"));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(UAE).perform();
+       
+        driver.findElement(By.xpath("(//span[contains(text(),'KSA')])[2]")).click();
+        String URL= driver.getCurrentUrl();
+        System.out.println(URL);
+        driver.quit();
+    }
+
+}

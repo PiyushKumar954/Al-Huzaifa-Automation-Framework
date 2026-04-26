@@ -1,0 +1,33 @@
+package TestCase;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import PageObject.Header;
+import TestBase.BaseClass;
+ class TC001_Header extends BaseClass{
+	
+	@Test(groups = {"sanity"})
+    public void verifyHeaderBenefits()
+    {
+        Header header = new Header(driver);
+
+        logger.info("Starting header sanity validation");
+
+        Assert.assertTrue(header.isFreeShippingVisible(), "Free Shipping option is not visible in header");
+        logger.info("Free Shipping is visible in header");
+
+        Assert.assertTrue(header.isWarrantyVisible(), "Warranty option is not visible in header");
+        logger.info("Warranty is visible in header");
+
+        Assert.assertTrue(header.isPaymentFlexibilityVisible(), "Payment Flexibility option is not visible in header");
+        logger.info("Payment Flexibility is visible in header");
+
+        Assert.assertTrue(header.isFreeInteriorDesignVisible(), "Free Interior Design option is not visible in header");
+        logger.info("Free Interior Design is visible in header");
+
+        logger.info("Header sanity validation completed successfully");
+    }
+	
+
+}

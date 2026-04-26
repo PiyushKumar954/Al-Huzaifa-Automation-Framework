@@ -1,0 +1,81 @@
+package TestCase;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import PageObject.Header;
+import TestBase.BaseClass;
+ public class TC001_Header extends BaseClass{
+	
+	@Test(groups = {"Free Shipping"})
+    public void FreeShipping()
+    {
+        Header header = new Header(driver);
+
+        logger.info("Verifying free shipping validation in Header");
+
+        Assert.assertTrue(header.isFreeShippingVisible(), "Free Shipping option is not visible in header");
+        logger.info("Free Shipping is visible in header");
+        
+        String actualText = header.getFreeShippingText();
+        Assert.assertTrue(
+            actualText.contains("Free delivery on all online orders above 500 AED"),
+            "Expected text is not displayed. Actual text: " + actualText );
+       logger.info("Free Shipping text validation passed");
+       System.out.println(actualText);
+    }
+	
+	@Test(groups = {"Warrenty"})
+    public void Warrenty()
+    {
+        Header header = new Header(driver);
+
+        logger.info("Verifying Warrenty validation in Header");
+
+        Assert.assertTrue(header.isWarrantyVisible(), "Warranty option is not visible in header");
+        logger.info("Warranty is visible in header");
+        
+        String actualText = header.getWarrantyText();
+        Assert.assertTrue(
+            actualText.contains("2-year warranty against manufacturing defects"),
+            "Expected text is not displayed. Actual text: " + actualText );
+       logger.info("Warrenty text validation passed");
+       System.out.println(actualText);
+    }
+	
+	@Test(groups = {"Payment Flexibility"})
+    public void PaymentFlexibility()
+    {
+        Header header = new Header(driver);
+        
+        logger.info("Verifying Payment Flexibility validation in Header");
+
+        Assert.assertTrue(header.isPaymentFlexibilityVisible(), "Payment Flexibility option is not visible in header");
+        logger.info("Payment Flexibility is visible in header");
+
+        String actualText = header.getPaymentFlexibilityText();
+        Assert.assertTrue(
+            actualText.contains("Payment in installments, Select Tabby / Tamara"),
+            "Expected text is not displayed. Actual text: " + actualText );
+       logger.info("Payment Flexibility text validation passed");
+       System.out.println(actualText);
+    }
+	@Test(groups = {"Free Interior Design"})
+    public void FreeInteriorDesign()
+    {
+        Header header = new Header(driver);
+
+        Assert.assertTrue(header.isFreeInteriorDesignVisible(), "Free Interior Design option is not visible in header");
+        logger.info("Free Interior Design is visible in header");
+        
+        String actualText = header.getFreeInteriorDesignText();
+        Assert.assertTrue(
+            actualText.contains("Our interior designer is ready to help you bring your ideas to life. Book now"),
+            "Expected text is not displayed. Actual text: " + actualText );
+       logger.info("Free Interior Design text validation passed");
+       System.out.println(actualText);
+
+        logger.info("Header sanity validation completed successfully");
+    }
+
+}
