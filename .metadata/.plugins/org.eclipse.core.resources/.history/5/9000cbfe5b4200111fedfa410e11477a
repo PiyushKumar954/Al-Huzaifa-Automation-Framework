@@ -1,0 +1,101 @@
+21:47:44.906 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+21:47:45.446 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+21:47:47.359 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+21:47:47.403 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+21:48:16.832 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+21:48:16.923 [main] INFO  TestCase.TC001_Header - Verifying About menu validation in Header
+21:48:17.112 [main] INFO  TestCase.TC001_Header - About menu is visible in header
+21:48:17.138 [main] INFO  TestCase.TC001_Header - Verifying Cart validation in Header
+21:48:17.268 [main] INFO  TestCase.TC001_Header - Cart is visible in header
+21:48:17.268 [main] INFO  TestCase.TC001_Header - Verifying Minicart
+21:48:18.290 [main] INFO  TestCase.TC001_Header - Mini cart is popup opens on click
+21:48:18.717 [main] INFO  TestCase.TC001_Header - Verifying Free Interior Design validation in Header
+21:48:18.934 [main] INFO  TestCase.TC001_Header - Free Interior Design is visible in header
+21:48:20.144 [main] INFO  TestCase.TC001_Header - Free Interior Design text validation passed
+21:48:20.174 [main] INFO  TestCase.TC001_Header - Verifying free shipping validation in Header
+21:48:20.447 [main] INFO  TestCase.TC001_Header - Free Shipping is visible in header
+21:48:21.018 [main] INFO  TestCase.TC001_Header - Free Shipping text validation passed
+21:48:21.049 [main] INFO  TestCase.TC001_Header - Verifying Ideas menu validation in Header
+21:48:21.306 [main] INFO  TestCase.TC001_Header - Ideas menu is visible in header
+21:48:21.336 [main] INFO  TestCase.TC001_Header - Verifying Payment Flexibility validation in Header
+21:48:21.615 [main] INFO  TestCase.TC001_Header - Payment Flexibility is visible in header
+21:48:22.171 [main] INFO  TestCase.TC001_Header - Payment Flexibility text validation passed
+21:48:22.198 [main] INFO  TestCase.TC001_Header - Verifying Shop menu validation in Header
+21:48:22.455 [main] INFO  TestCase.TC001_Header - Shop menu is visible in header
+21:48:45.229 [main] INFO  TestCase.TC001_Header - Shop menu redirection validation passed
+21:48:45.242 [main] INFO  TestCase.TC001_Header - Verifying Signin validation in Header
+21:48:45.431 [main] INFO  TestCase.TC001_Header - Signin is visible in header
+21:48:45.431 [main] INFO  TestCase.TC001_Header - Verifying Signin and Register Logo is present in header
+21:49:09.297 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/customer/account/login/referer/aHR0cHM6Ly93d3cuYWxodXphaWZhLmNvbS9lbi9jdXN0b21lci9hY2NvdW50L2luZGV4Lw~~/
+21:49:09.301 [main] INFO  TestCase.TC001_Header - Sign-In is Clicked and is landing on correct URL
+21:49:33.097 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/customer/account/create/
+21:49:33.097 [main] INFO  TestCase.TC001_Header - Register is Clicked and is landing on correct URL
+21:49:33.135 [main] INFO  TestCase.TC001_Header - Verifying Site Logo Design validation in Header
+21:49:33.281 [main] INFO  TestCase.TC001_Header - Site Logo is visible in header
+21:49:33.281 [main] INFO  TestCase.TC001_Header - Verifying Site Logo is Clickable & URL redirection
+21:49:57.445 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/
+21:49:57.446 [main] INFO  TestCase.TC001_Header - Site Logo is Clicked and is landing on correct URL
+21:49:57.458 [main] INFO  TestCase.TC001_Header - Verifying Warrenty validation in Header
+21:49:57.688 [main] INFO  TestCase.TC001_Header - Warranty is visible in header
+21:49:58.278 [main] INFO  TestCase.TC001_Header - Warrenty text validation passed
+21:49:58.300 [main] INFO  TestCase.TC001_Header - Verifying Wishlist validation in Header
+21:49:58.452 [main] INFO  TestCase.TC001_Header - Wishlist is visible in header
+21:49:58.453 [main] INFO  TestCase.TC001_Header - Verifying Wishlist Click and URL redirection
+21:50:22.808 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/customer/account/login/referer/aHR0cHM6Ly93d3cuYWxodXphaWZhLmNvbS9lbi93aXNobGlzdC8~/
+21:50:22.809 [main] INFO  TestCase.TC001_Header - Wishlist is Clicked and is landing on correct URL
+21:50:22.827 [main] INFO  TestCase.TC001_Header - Verifying Lanaguage Switcher validation in Header
+21:50:23.100 [main] INFO  TestCase.TC001_Header - Language Switcher is visible in header
+21:50:23.101 [main] INFO  TestCase.TC001_Header - Verifying Arabic site Redirection
+21:50:47.611 [main] INFO  TestCase.TC001_Header - Arabic site is Clicked and is landing on correct URL
+21:50:48.071 [main] INFO  TestCase.TC001_Header - Browser closed successfully
+21:58:24.472 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+21:58:25.036 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+21:58:27.024 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+21:58:27.146 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+21:58:57.801 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+21:58:57.912 [main] INFO  TestCase.TC001_Header - Verifying Search validation in Header
+21:59:19.570 [main] INFO  TestCase.TC001_Header - Browser closed successfully
+22:12:07.571 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+22:12:07.892 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+22:12:09.003 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+22:12:09.051 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+22:12:37.352 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+22:12:37.421 [main] INFO  TestCase.TC001_Header - Verifying Search validation in Header
+22:13:18.397 [main] INFO  TestCase.TC001_Header - Browser closed successfully
+22:24:15.179 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+22:24:15.427 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+22:24:16.097 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+22:24:16.117 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+22:24:44.371 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+22:24:44.422 [main] INFO  TestCase.TC001_Header - Verifying Search validation in Header
+22:24:44.514 [main] INFO  TestCase.TC001_Header - Search box is visible in header
+22:24:46.365 [main] INFO  TestCase.TC001_Header - Browser closed successfully
+22:32:00.221 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+22:32:00.445 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+22:32:01.129 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+22:32:01.172 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+22:32:35.213 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+22:32:35.264 [main] INFO  TestCase.TC001_Header - Verifying Search validation in Header
+22:32:35.371 [main] INFO  TestCase.TC001_Header - Search box is visible in header
+22:33:16.683 [main] INFO  TestCase.TC001_Header - Browser closed successfully
+22:39:04.918 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+22:39:05.139 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+22:39:05.790 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+22:39:05.821 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+22:39:32.048 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+22:39:32.104 [main] INFO  TestCase.TC001_Header - Verifying Search validation in Header
+22:39:32.196 [main] INFO  TestCase.TC001_Header - Search box is visible in header
+22:39:55.621 [main] INFO  TestCase.TC001_Header - Search validation passed
+22:39:55.970 [main] INFO  TestCase.TC001_Header - Browser closed successfully

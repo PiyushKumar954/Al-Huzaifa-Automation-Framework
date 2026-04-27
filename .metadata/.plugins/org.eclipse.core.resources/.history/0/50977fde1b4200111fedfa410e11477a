@@ -1,0 +1,217 @@
+package PageObject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+
+public class Header extends BasePage{
+	public Header(WebDriver driver)
+	{
+		super(driver);
+	}
+
+	@FindBy(xpath = "(//span[contains(text(),'Free shipping')])[2]")
+	WebElement FreeShipping;
+	@FindBy(xpath = "(//div[contains(text(),'Free delivery on all online orders above 500 AED')])[2]")
+	WebElement FreeShippingText;
+	 	public boolean isFreeShippingVisible()
+	    {
+	        return isDisplayed(FreeShipping);
+	    }
+	 	public String getFreeShippingText()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(FreeShipping).perform();
+	        return getText(FreeShippingText);
+	    }
+
+	@FindBy (xpath= "(//span[contains(text(),'Warranty')])[2]")
+	WebElement warrenty;
+	@FindBy(xpath = "(//div[contains(text(),'2-year warranty against manufacturing defects')])[2]")
+	WebElement WarrentyText;   
+		public boolean isWarrantyVisible()
+	    {
+	        return isDisplayed(warrenty);
+	    }
+		public String getWarrantyText()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(warrenty).perform();
+	        return getText(WarrentyText);
+	    }
+
+	@FindBy(xpath = "(//span[contains(text(),'Payment flexibility')])[2]")
+	WebElement PaymentFlexibility;
+	@FindBy(xpath = "(//div[contains(text(),'Payment in installments, Select Tabby / Tamara')])[2]")
+	WebElement PaymentFlexibilityText;
+		public boolean isPaymentFlexibilityVisible()
+	    {
+	        return isDisplayed(PaymentFlexibility);
+	    }
+		public String getPaymentFlexibilityText()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(PaymentFlexibility).perform();
+	        return getText(PaymentFlexibilityText);
+	    }
+
+	@FindBy(xpath = "(//span[contains(text(),'Free Interior Design')])[2]")
+	WebElement FreeInteriorDesign;
+	@FindBy(xpath = "(//div[contains(text(),'Our interior designer is ready to help you bring your ideas to life.')])[2]")
+	WebElement FreeInteriorDesignText;
+		public boolean isFreeInteriorDesignVisible()
+	    {
+	        return isDisplayed(FreeInteriorDesign);
+	    }
+		public String getFreeInteriorDesignText()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(FreeInteriorDesign).perform();
+	        return getText(FreeInteriorDesignText);
+	    }
+	    
+	@FindBy(xpath = "//a[@class='relative order-2 logo']")
+	WebElement SiteLogo;
+		public boolean isSiteLogoVisible()
+	    {
+	        return isDisplayed(SiteLogo);
+	    }
+	    
+	    public void clickLogo()
+	    {
+	    	SiteLogo.click();
+	    }
+	    
+	    
+	@FindBy(xpath = "//button[@id='customer-menu']")
+	WebElement SignInLogo;
+	@FindBy(xpath = "//a[contains(text(),'Sign In')]")
+	WebElement SignIn;
+	@FindBy(xpath = "//a[contains(text(),'Create an Account')]")
+	WebElement Register;
+	    public boolean isSiginInLogoVisible()
+	    {
+	        return isDisplayed(SignInLogo);
+	    }
+	    public void Signin()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(SignInLogo).perform();
+	        SignIn.click();
+	    }
+	    public void Register()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(SignInLogo).perform();
+	        Register.click();
+	    }
+	    
+	@FindBy(xpath = "//a[@id='menu-wishlist-icon']")
+	WebElement Wishlist;
+	    public boolean isWishlistVisible()
+	    {
+	        return isDisplayed(Wishlist);
+	    }
+	    public void Wishlist()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(Wishlist).perform();
+	        Wishlist.click();
+	    }
+	    
+	@FindBy(xpath = "//span[normalize-space()='En']")
+	WebElement EnaglishLanguage;
+	@FindBy(xpath = "//a[contains(text(),'Ar')and  @class=\"dropdown-menu__item \"]")
+	WebElement ArabicDropdown;
+	@FindBy(xpath = "//span[normalize-space()='Ar']")
+	WebElement ArabicLanguage;
+	    public boolean isEngLangSwitchVisible()
+	    {
+	        return isDisplayed(EnaglishLanguage);
+	    }
+	    public boolean isARLangSwitchVisible()
+	    {
+	        return isDisplayed(ArabicLanguage);
+	    }
+	    public void LangSwitch()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(EnaglishLanguage).perform();
+	        ArabicDropdown.click();
+	    }
+	    
+	@FindBy(xpath = "//button[@id='menu-cart-icon']")
+	WebElement CartIcon;
+	@FindBy(xpath = "//div[contains(text(),'Shopping Bag')]")
+	WebElement MiniCart;
+	@FindBy(xpath = "//button[@aria-label='Close minicart']")
+	WebElement CloseMiniCart;
+	    public void CartIcon()
+	    {
+	        CartIcon.click();
+	    }
+	    public boolean isMiniCartVisible()
+	    {
+	        return isDisplayed(MiniCart);
+	    }
+	    public void CloseCartIcon()
+	    {
+	        CloseMiniCart.click();
+	    }
+	    public boolean isCartIconVisible()
+	    {
+	        return isDisplayed(CartIcon);
+	    }
+	    
+	@FindBy(xpath = "(//span[contains(text(),'UAE')])[2]")
+	WebElement uaeStore;
+	@FindBy(xpath = "(//a[@class='dropdown-menu__item flex items-center gap-2.5 justify-start'])[5]")
+	WebElement ksaStore;
+	@FindBy(xpath = "(//span[contains(text(),'OMAN')])[2]")
+	WebElement omanStore;
+	@FindBy(xpath = "(//span[contains(text(),'QATAR')])[2]")
+	WebElement qatarStore;
+	@FindBy(xpath = "(//span[contains(text(),'BAHRAIN')])[2]")
+	WebElement bahrainStore;
+	    public boolean isUAEStoreVisible()
+	    {
+	        return isDisplayed(uaeStore);
+	    }
+	    public void openCountrySwitcher()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(uaeStore).perform();
+	        waitForVisible(ksaStore);
+	    }
+	    public void clickKsaStore()
+	    {
+	        openCountrySwitcher();
+	        click(ksaStore);
+	    }
+	    public void QATAR()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(ksaStore).perform();
+	        qatarStore.click();
+	    }
+	    public void OMAN()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(qatarStore).perform();
+	        omanStore.click();
+	    }
+	    public void BAHRAIN()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(omanStore).perform();
+	        bahrainStore.click();
+	    }
+	    public void Uae()
+	    {
+	    	Actions actions = new Actions(driver);
+	        actions.moveToElement(bahrainStore).perform();
+	        uaeStore.click();
+	    }
+
+}

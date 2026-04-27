@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -10,116 +11,70 @@ public class Header extends BasePage{
 	{
 		super(driver);
 	}
-	
+
 	@FindBy(xpath = "(//span[contains(text(),'Free shipping')])[2]")
 	WebElement FreeShipping;
 	@FindBy(xpath = "(//div[contains(text(),'Free delivery on all online orders above 500 AED')])[2]")
 	WebElement FreeShippingText;
-	
-	@FindBy (xpath= "(//span[contains(text(),'Warranty')])[2]")
-	WebElement warrenty;
-	@FindBy(xpath = "(//div[contains(text(),'2-year warranty against manufacturing defects')])[2]")
-	WebElement WarrentyText;
-	
-	@FindBy(xpath = "(//span[contains(text(),'Payment flexibility')])[2]")
-	WebElement PaymentFlexibility;
-	@FindBy(xpath = "(//div[contains(text(),'Payment in installments, Select Tabby / Tamara')])[2]")
-	WebElement PaymentFlexibilityText;
-	
-	@FindBy(xpath = "(//span[contains(text(),'Free Interior Design')])[2]")
-	WebElement FreeInteriorDesign;
-	@FindBy(xpath = "(//div[contains(text(),'Our interior designer is ready to help you bring your ideas to life.')])[2]")
-	WebElement FreeInteriorDesignText;
-	
-	@FindBy(xpath = "//a[@class='relative order-2 logo']")
-	WebElement SiteLogo;
-	
-	@FindBy(xpath = "//button[@id='customer-menu']")
-	WebElement SignInLogo;
-	
-	@FindBy(xpath = "//a[contains(text(),'Sign In')]")
-	WebElement SignIn;
-	
-	@FindBy(xpath = "//a[contains(text(),'Create an Account')]")
-	WebElement Register;
-	
-	@FindBy(xpath = "//a[@id='menu-wishlist-icon']")
-	WebElement Wishlist;
-	
-	@FindBy(xpath = "//span[normalize-space()='En']")
-	WebElement EnaglishLanguage;
-	@FindBy(xpath = "//a[contains(text(),'Ar')and  @class=\"dropdown-menu__item \"]")
-	WebElement ArabicDropdown;
-	@FindBy(xpath = "//span[normalize-space()='Ar']")
-	WebElement ArabicLanguage;
-	
-	@FindBy(xpath = "//button[@id='menu-cart-icon']")
-	WebElement CartIcon;
-	@FindBy(xpath = "//div[contains(text(),'Shopping Bag')]")
-	WebElement MiniCart;
-	@FindBy(xpath = "//button[@aria-label='Close minicart']")
-	WebElement CloseMiniCart;
-	
-	@FindBy(xpath = "(//span[contains(text(),'UAE')])[2]")
-	WebElement UAE;
-	@FindBy(xpath = "(//span[contains(text(),'KSA')])[2]")
-	WebElement KSA;
-	@FindBy(xpath = "(//span[contains(text(),'OMAN')])[2]")
-	WebElement Oman;
-	@FindBy(xpath = "(//span[contains(text(),'QATAR')])[2]")
-	WebElement Qatar;
-	@FindBy(xpath = "(//span[contains(text(),'BAHRAIN')])[2]")
-	WebElement Baharin;
-	
-	 public boolean isFreeShippingVisible()
+	 	public boolean isFreeShippingVisible()
 	    {
 	        return isDisplayed(FreeShipping);
 	    }
-
-	    public boolean isWarrantyVisible()
-	    {
-	        return isDisplayed(warrenty);
-	    }
-
-	    public boolean isPaymentFlexibilityVisible()
-	    {
-	        return isDisplayed(PaymentFlexibility);
-	    }
-
-	    public boolean isFreeInteriorDesignVisible()
-	    {
-	        return isDisplayed(FreeInteriorDesign);
-	    }
-
-	    public String getFreeShippingText()
+	 	public String getFreeShippingText()
 	    {
 	    	Actions actions = new Actions(driver);
 	        actions.moveToElement(FreeShipping).perform();
 	        return getText(FreeShippingText);
 	    }
 
-	    public String getWarrantyText()
+	@FindBy (xpath= "(//span[contains(text(),'Warranty')])[2]")
+	WebElement warrenty;
+	@FindBy(xpath = "(//div[contains(text(),'2-year warranty against manufacturing defects')])[2]")
+	WebElement WarrentyText;   
+		public boolean isWarrantyVisible()
+	    {
+	        return isDisplayed(warrenty);
+	    }
+		public String getWarrantyText()
 	    {
 	    	Actions actions = new Actions(driver);
 	        actions.moveToElement(warrenty).perform();
 	        return getText(WarrentyText);
 	    }
 
-	    public String getPaymentFlexibilityText()
+	@FindBy(xpath = "(//span[contains(text(),'Payment flexibility')])[2]")
+	WebElement PaymentFlexibility;
+	@FindBy(xpath = "(//div[contains(text(),'Payment in installments, Select Tabby / Tamara')])[2]")
+	WebElement PaymentFlexibilityText;
+		public boolean isPaymentFlexibilityVisible()
+	    {
+	        return isDisplayed(PaymentFlexibility);
+	    }
+		public String getPaymentFlexibilityText()
 	    {
 	    	Actions actions = new Actions(driver);
 	        actions.moveToElement(PaymentFlexibility).perform();
 	        return getText(PaymentFlexibilityText);
 	    }
 
-	    public String getFreeInteriorDesignText()
+	@FindBy(xpath = "(//span[contains(text(),'Free Interior Design')])[2]")
+	WebElement FreeInteriorDesign;
+	@FindBy(xpath = "(//div[contains(text(),'Our interior designer is ready to help you bring your ideas to life.')])[2]")
+	WebElement FreeInteriorDesignText;
+		public boolean isFreeInteriorDesignVisible()
+	    {
+	        return isDisplayed(FreeInteriorDesign);
+	    }
+		public String getFreeInteriorDesignText()
 	    {
 	    	Actions actions = new Actions(driver);
 	        actions.moveToElement(FreeInteriorDesign).perform();
 	        return getText(FreeInteriorDesignText);
 	    }
 	    
-	    public boolean isSiteLogoVisible()
+	@FindBy(xpath = "//a[@class='relative order-2 logo']")
+	WebElement SiteLogo;
+		public boolean isSiteLogoVisible()
 	    {
 	        return isDisplayed(SiteLogo);
 	    }
@@ -129,18 +84,23 @@ public class Header extends BasePage{
 	    	SiteLogo.click();
 	    }
 	    
+	    
+	@FindBy(xpath = "//button[@id='customer-menu']")
+	WebElement SignInLogo;
+	@FindBy(xpath = "//a[contains(text(),'Sign In')]")
+	WebElement SignIn;
+	@FindBy(xpath = "//a[contains(text(),'Create an Account')]")
+	WebElement Register;
 	    public boolean isSiginInLogoVisible()
 	    {
 	        return isDisplayed(SignInLogo);
 	    }
-	    
 	    public void Signin()
 	    {
 	    	Actions actions = new Actions(driver);
 	        actions.moveToElement(SignInLogo).perform();
 	        SignIn.click();
 	    }
-	    
 	    public void Register()
 	    {
 	    	Actions actions = new Actions(driver);
@@ -148,6 +108,8 @@ public class Header extends BasePage{
 	        Register.click();
 	    }
 	    
+	@FindBy(xpath = "//a[@id='menu-wishlist-icon']")
+	WebElement Wishlist;
 	    public boolean isWishlistVisible()
 	    {
 	        return isDisplayed(Wishlist);
@@ -159,6 +121,12 @@ public class Header extends BasePage{
 	        Wishlist.click();
 	    }
 	    
+	@FindBy(xpath = "//span[normalize-space()='En']")
+	WebElement EnaglishLanguage;
+	@FindBy(xpath = "//a[contains(text(),'Ar')and  @class=\"dropdown-menu__item \"]")
+	WebElement ArabicDropdown;
+	@FindBy(xpath = "//span[normalize-space()='Ar']")
+	WebElement ArabicLanguage;
 	    public boolean isEngLangSwitchVisible()
 	    {
 	        return isDisplayed(EnaglishLanguage);
@@ -174,6 +142,12 @@ public class Header extends BasePage{
 	        ArabicDropdown.click();
 	    }
 	    
+	@FindBy(xpath = "//button[@id='menu-cart-icon']")
+	WebElement CartIcon;
+	@FindBy(xpath = "//div[contains(text(),'Shopping Bag')]")
+	WebElement MiniCart;
+	@FindBy(xpath = "//button[@aria-label='Close minicart']")
+	WebElement CloseMiniCart;
 	    public void CartIcon()
 	    {
 	        CartIcon.click();
@@ -191,39 +165,97 @@ public class Header extends BasePage{
 	        return isDisplayed(CartIcon);
 	    }
 	    
+	@FindBy(xpath = "(//span[contains(text(),'UAE')])[2]")
+	WebElement uaeStore;
+	@FindBy(xpath = "(//a[@class='dropdown-menu__item flex items-center gap-2.5 justify-start'])[5]")
+	WebElement ksaStore;
+	@FindBy(xpath = "(//span[contains(text(),'OMAN')])[2]")
+	WebElement omanStore;
+	@FindBy(xpath = "(//span[contains(text(),'QATAR')])[2]")
+	WebElement qatarStore;
+	@FindBy(xpath = "(//span[contains(text(),'BAHRAIN')])[2]")
+	WebElement bahrainStore;
 	    public boolean isUAEStoreVisible()
 	    {
-	        return isDisplayed(UAE);
+	        return isDisplayed(uaeStore);
 	    }
-	    public void Saudi()
+	    public void openCountrySwitcher()
 	    {
 	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(UAE).perform();
-	        KSA.click();
+	        actions.moveToElement(uaeStore).perform();
+	        waitForVisible(ksaStore);
+	    }
+	    public void clickKsaStore()
+	    {
+	        openCountrySwitcher();
+	        click(ksaStore);
 	    }
 	    public void QATAR()
 	    {
 	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(KSA).perform();
-	        Qatar.click();
+	        actions.moveToElement(ksaStore).perform();
+	        qatarStore.click();
 	    }
 	    public void OMAN()
 	    {
 	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(Qatar).perform();
-	        Oman.click();
+	        actions.moveToElement(qatarStore).perform();
+	        omanStore.click();
 	    }
 	    public void BAHRAIN()
 	    {
 	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(Oman).perform();
-	        Baharin.click();
+	        actions.moveToElement(omanStore).perform();
+	        bahrainStore.click();
 	    }
 	    public void Uae()
 	    {
 	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(Baharin).perform();
-	        UAE.click();
+	        actions.moveToElement(bahrainStore).perform();
+	        uaeStore.click();
 	    }
+	    
+	@FindBy(xpath = "//a[@title='Shop' and contains(text(), 'Shop')]")
+	WebElement shopMenu;
+	    public boolean isShopMenuVisible()
+	    {
+	        return isDisplayed(shopMenu);
+	    }
+
+	    public void clickShopMenu()
+	    {
+	        click(shopMenu);
+	    }
+	    
+	@FindBy(xpath = "//span[@title='Ideas' and contains(text(), 'Ideas')]")
+    WebElement ideasMenu;
+    	public boolean isIdeasMenuVisible()
+    	{
+        	return isDisplayed(ideasMenu);
+    	}
+  
+    @FindBy(xpath = "//span[@title='About' and contains(text(), 'About')]")
+    WebElement aboutMenu;
+    	public boolean isAboutMenuVisible()
+    	{
+        	return isDisplayed(aboutMenu);
+    	}
+    @FindBy(xpath="(//*[name()='svg' and @width='24' and @height='24'])[15]")
+    WebElement SearchIcon;
+    @FindBy(xpath = "//input[@id='search']")
+    WebElement searchBox;
+    	public boolean isSearchBoxVisible()
+    	{
+        	return isDisplayed(SearchIcon);
+    	}
+    	public void OpenSearch()
+	    {
+    		SearchIcon.click();
+	    }
+    	public void searchForProduct(String productName)
+    	{
+        	type(searchBox, productName);
+        	searchBox.sendKeys(Keys.ENTER);
+    	}
 
 }

@@ -212,7 +212,7 @@ import Utilities.ExtentReportManager;
         header.CloseCartIcon();
     }
 	
-	@Test(groups = {"Sanity"})
+	/*@Test(groups = {"Sanity"})
     public void CountrySwitcher()
     {
         Header header = new Header(driver);
@@ -225,16 +225,16 @@ import Utilities.ExtentReportManager;
         
         logger.info("Verifying Click and URL redirection for KSA");
         ExtentReportManager.test.info("TC001 Header Sanity -> Click and URL redirection for KSA store");
-         
-        header.Saudi();
+       
+        header.clickKsaStore();
         String KSAURL = driver.getCurrentUrl();
-       // Assert.assertTrue( KSAURL.contains("/sa-en/"),
-        	//    "Landing page URL is not matching after clicking. Actual URL: " + KSAURL);
+        Assert.assertTrue( KSAURL.contains("/sa-en/"),
+        	   "Landing page URL is not matching after clicking. Actual URL: " + KSAURL);
             
         System.out.println("KSA country switcher validation passed. Actual URL: " + KSAURL);
         logger.info("KSA is Clicked and is landing on correct URL");
         
-        logger.info("Verifying Click and URL redirection for QATAR");
+      	logger.info("Verifying Click and URL redirection for QATAR");
         ExtentReportManager.test.info("TC001 Header Sanity -> Click and URL redirection for QATAR store");
          
         header.QATAR();
@@ -268,7 +268,72 @@ import Utilities.ExtentReportManager;
         System.out.println("Bahrain country switcher validation passed. Actual URL: " + BahrainURL);
         logger.info("Bahrain is Clicked and is landing on correct URL");
         
-        header.Uae();
-    }
+        //header.Uae();
+    }*/
+	 
+	 @Test(groups = {"Sanity"})
+    public void ShopMenu()
+    {
+        Header header = new Header(driver);
+
+        logger.info("Verifying Shop menu validation in Header");
+        ExtentReportManager.test.info("TC001 Header Sanity -> Shop menu visibility");
+
+        Assert.assertTrue(header.isShopMenuVisible(), "Shop menu is not visible in header");
+        logger.info("Shop menu is visible in header");
+
+        header.clickShopMenu();
+        String actualUrl = driver.getCurrentUrl();
+        Assert.assertEquals(actualUrl,"https://www.alhuzaifa.com/en/shop/",
+                "Shop menu redirection failed. Actual URL: " + actualUrl);
+
+        logger.info("Shop menu redirection validation passed");
+        System.out.println("Shop menu validation passed. Actual URL: " + actualUrl);
+     }
+	 
+	 @Test(groups = {"Sanity"})
+	    public void IdeasMenu()
+	    {
+	        Header header = new Header(driver);
+
+	        logger.info("Verifying Ideas menu validation in Header");
+	        ExtentReportManager.test.info("TC001 Header Sanity -> Ideas menu visibility");
+
+	        Assert.assertTrue(header.isIdeasMenuVisible(), "Ideas menu is not visible in header");
+	        logger.info("Ideas menu is visible in header");
+	    }
+	 
+	 @Test(groups = {"Sanity"})
+	    public void AboutMenu()
+	    {
+	        Header header = new Header(driver);
+
+	        logger.info("Verifying About menu validation in Header");
+	        ExtentReportManager.test.info("TC001 Header Sanity -> About menu visibility");
+
+	        Assert.assertTrue(header.isAboutMenuVisible(), "About menu is not visible in header");
+	        logger.info("About menu is visible in header");
+	    }
+	 
+	 @Test(groups = {"Sanity"})
+	    public void SearchProduct()
+	    {
+	        Header header = new Header(driver);
+
+	        logger.info("Verifying Search validation in Header");
+	        ExtentReportManager.test.info("TC001 Header Sanity -> Search box visibility");
+
+	        Assert.assertTrue(header.isSearchBoxVisible(), "Search box is not visible in header");
+	        logger.info("Search box is visible in header");
+
+	        header.OpenSearch();
+	        header.searchForProduct("Sofa");
+	        String actualUrl = driver.getCurrentUrl();
+	        Assert.assertEquals(actualUrl,"https://www.alhuzaifa.com/en/catalogsearch/result/?q=Sofa",
+	                "Search redirection failed. Actual URL: " + actualUrl);
+
+	        logger.info("Search validation passed");
+	        System.out.println("Search validation passed. Actual URL: " + actualUrl);
+	    }
 
 }

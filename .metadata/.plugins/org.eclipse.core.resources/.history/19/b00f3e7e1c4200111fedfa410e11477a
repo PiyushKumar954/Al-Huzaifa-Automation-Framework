@@ -1,0 +1,39 @@
+package TestCase;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+import PageObject.Header;
+
+public class CodeRun {
+	public static void main(String[] args) throws InterruptedException {
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.get("https://www.alhuzaifa.com/en/");
+        WebElement closePopup = driver.findElement(
+        	    By.xpath("//button[@type='button' and contains(@class,'absolute') and contains(@class,'right-2.5')]")
+        	);
+        closePopup.click();
+        System.out.println("Welcome popup closed");
+        
+        Header header = new Header(driver);
+        header.clickKsaStore();
+        String KSAURL = driver.getCurrentUrl();
+        //Assert.assertTrue( KSAURL.contains("/sa-en/"),
+        	//    "Landing page URL is not matching after clicking. Actual URL: " + KSAURL);
+        System.out.println("KSA country switcher validation passed. Actual URL: " + KSAURL);
+        header.QATAR();
+        String QatarURL = driver.getCurrentUrl();
+        Assert.assertTrue( QatarURL.contains("https://www.alhuzaifa.com/qa-en/"),
+        	    "Landing page URL is not matching after clicking. Actual URL: " + QatarURL);
+        System.out.println("KSA country switcher validation passed. Actual URL: " + QatarURL);
+        driver.quit();
+    }
+
+}

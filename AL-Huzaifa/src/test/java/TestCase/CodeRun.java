@@ -23,7 +23,7 @@ public class CodeRun {
         System.out.println("Welcome popup closed");
         
         Header header = new Header(driver);
-        header.Saudi();
+        header.clickKsaStore();
         String KSAURL = driver.getCurrentUrl();
         Assert.assertTrue( KSAURL.contains("/sa-en/"),
         	    "Landing page URL is not matching after clicking. Actual URL: " + KSAURL);

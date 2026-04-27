@@ -1,0 +1,96 @@
+package TestBase;
+
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+
+import PageObject.HomePage;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class BaseClass {
+	public static WebDriver driver;
+	public Logger logger;
+	public HomePage homepage;
+	
+	@BeforeClass
+	@Parameters({"os","browser"})
+	public void setup(String os, String br)
+	{
+		logger = LogManager.getLogger(this.getClass());
+		switch(br.toLowerCase())
+		{
+		case "chrome":
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			break;
+		case "firefox":
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			break;
+		case "edge":
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+			break;
+		default :
+			throw new IllegalArgumentException("Invalid browser: " + br);
+		}
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		
+		driver.get("https://www.alhuzaifa.com/en/");
+		driver.manage().window().maximize();
+		
+		homepage= new HomePage(driver);
+		homepage.closeWelcomePopupIfDisplayed();
+		logger.info("Application launched successfully in browser: " + br);
+		
+	}
+	@AfterClass
+	public void tearDown()
+    {
+        if (driver != null)
+        {
+            driver.quit();
+            logger.info("Browser closed successfully");
+        }
+    }
+	
+	public static String captureS(String tname) throws IOException
+	{
+	    String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+
+	    TakesScreenshot takeScreenshot = (TakesScreenshot) driver;
+	    File sourceFile = takeScreenshot.getScreenshotAs(OutputType.FILE);
+
+	    String folderPath = System.getProperty("user.dir") + "\\screenshots";
+	    File folder = new File(folderPath);
+	    if (!folder.exists())
+	    {
+	        folder.mkdirs();
+	    }
+
+	    String targetFilePath = folderPath + "\\" + tname + "_" + timeStamp + ".png";
+	    File targetFile = new File(targetFilePath);
+
+	    //sourceFile.renameTo(targetFile);
+	    FileUtils.copyFile(sourceFile, targetFile);
+
+	    return targetFilePath;
+	}
+
+}

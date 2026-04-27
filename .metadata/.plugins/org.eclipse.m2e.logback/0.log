@@ -693,3 +693,25 @@
 2026-04-26 21:27:56,942 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2026-04-26 21:28:02,242 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Al_Huzaifa\AL-Huzaifa\src\main\resources
 2026-04-26 21:28:02,254 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\test\resources to target\test-classes
+2026-04-26 21:29:03,394 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2026-04-26 21:58:22,132 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Al_Huzaifa\AL-Huzaifa\src\main\resources
+2026-04-26 21:58:22,151 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\test\resources to target\test-classes
+2026-04-26 22:03:55,202 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.19; built: 2025-04-01T13:28:40.005Z; git: 23436cd577b4238238eb192683dfc2b1476c6b87; jvm 21.0.6+7-LTS
+2026-04-26 22:03:55,280 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@352d2ad3{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@8b22f9d{STARTED}}
+2026-04-26 22:03:55,281 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-04-26 22:03:55,311 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@5a57e4e9{HTTP/1.1, (http/1.1)}{127.0.0.1:65280}
+2026-04-26 22:03:55,344 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@6459d730{STARTING}[12.0.19,sto=0] @2104477ms
+2026-04-26 22:04:15,980 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Al_Huzaifa\AL-Huzaifa\src\main\resources
+2026-04-26 22:04:15,986 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\test\resources to target\test-classes
+2026-04-26 22:04:19,534 [Worker-31: Launching CodeRun] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Al_Huzaifa\AL-Huzaifa\src\main\resources
+2026-04-26 22:04:19,540 [Worker-31: Launching CodeRun] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\test\resources to target\test-classes
+2026-04-26 22:18:06,616 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Al_Huzaifa\AL-Huzaifa\src\main\resources
+2026-04-26 22:18:06,618 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\test\resources to target\test-classes
+2026-04-26 22:19:28,124 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Al_Huzaifa\AL-Huzaifa\src\main\resources
+2026-04-26 22:19:28,126 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\test\resources to target\test-classes
+2026-04-26 22:19:34,335 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Al_Huzaifa\AL-Huzaifa\src\main\resources
+2026-04-26 22:19:34,340 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\test\resources to target\test-classes
+2026-04-26 22:20:32,734 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Al_Huzaifa\AL-Huzaifa\src\main\resources
+2026-04-26 22:20:32,738 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\test\resources to target\test-classes
+2026-04-27 11:56:55,064 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@6459d730{STOPPING}[12.0.19,sto=0]
+2026-04-27 11:56:55,069 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@5a57e4e9{HTTP/1.1, (http/1.1)}{127.0.0.1:0}

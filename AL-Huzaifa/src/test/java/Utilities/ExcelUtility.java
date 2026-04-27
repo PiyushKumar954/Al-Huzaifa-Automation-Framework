@@ -108,42 +108,45 @@ public class ExcelUtility {
 	public void fillGreenColor(String sheetName, int rownum, int colnum) throws IOException
 	{
 		fi = new FileInputStream(path);
-		workbook = new XSSFWorkbook(fi);
-		sheet = workbook.getSheet(sheetName);
-		
-		row = sheet.getRow(rownum);
-		cell = row.getCell(colnum);
-		
-		style = workbook.createCellStyle();
-		
-		style.setFillForegroundColor(IndexedColors.GREEN.getIndex());
-		style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
-		
-		cell.setCellStyle(style);
-		workbook.write(fo);
-		workbook.close();
-		fi.close();
-		fo.close();
+	    workbook = new XSSFWorkbook(fi);
+	    sheet = workbook.getSheet(sheetName);
+
+	    row = sheet.getRow(rownum);
+	    cell = row.getCell(colnum);
+
+	    style = workbook.createCellStyle();
+	    style.setFillForegroundColor(IndexedColors.GREEN.getIndex());
+	    style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+
+	    cell.setCellStyle(style);
+
+	    fo = new FileOutputStream(path);
+	    workbook.write(fo);
+	    workbook.close();
+	    fi.close();
+	    fo.close();
 	}
 	
 	public void fillRedColour(String sheetName, int rownum, int colnum) throws IOException
 	{
 		fi = new FileInputStream(path);
-		workbook = new XSSFWorkbook(fi);
-		sheet = workbook.getSheet(sheetName);
-		row = sheet.getRow(rownum);
-		cell = row.getCell(colnum);
-		
-		style = workbook.createCellStyle();
-		
-		style.setFillBackgroundColor(IndexedColors.RED.getIndex());
-		style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
-		
-		cell.setCellStyle(style);
-		workbook.write(fo);
-		workbook.close();
-		fi.close();
-		fo.close();
+	    workbook = new XSSFWorkbook(fi);
+	    sheet = workbook.getSheet(sheetName);
+
+	    row = sheet.getRow(rownum);
+	    cell = row.getCell(colnum);
+
+	    style = workbook.createCellStyle();
+	    style.setFillForegroundColor(IndexedColors.RED.getIndex());
+	    style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+
+	    cell.setCellStyle(style);
+
+	    fo = new FileOutputStream(path);
+	    workbook.write(fo);
+	    workbook.close();
+	    fi.close();
+	    fo.close();
 	}
 
 }
