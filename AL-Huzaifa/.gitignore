@@ -1,11 +1,14 @@
 target/
 bin/
 test-output/
-logs/
+reports/
 screenshots/
+logs/
 *.log
 .classpath
 .project
 .settings/
 .DS_Store
-reports/
+Thumbs.db
+.metadata/
+*.launch

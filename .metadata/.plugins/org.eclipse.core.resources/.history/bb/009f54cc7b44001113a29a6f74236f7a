@@ -1,0 +1,70 @@
+package TestCase;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import PageObject.Header;
+import PageObject.SignIn;
+import TestBase.BaseClass;
+import Utilities.DataProviders;
+import Utilities.ExtentReportManager;
+
+
+public class CodeRun extends BaseClass {
+	@Test(groups = { "Sanity" },dataProvider = "LoginCredentials",dataProviderClass = DataProviders.class
+	    )
+	    public void SignInValidation(String email, String password, String expectedResult) {
+	        Header header = new Header(driver);
+	        SignIn signInPage = new SignIn(driver);
+
+	        logger.info("Starting sign in test for user: " + email);
+	        ExtentReportManager.test.info("TC003 SignIn -> Login attempt started for: " + email);
+
+	        driver.get("https://www.alhuzaifa.com/en/");
+	        homepage.closeWelcomePopupIfDisplayed();
+
+	        header.Signin();
+
+	        boolean loginSuccess = signInPage.waitForSuccessfulLogin();
+	        boolean loginError = signInPage.isLoginErrorVisible();
+
+	        if (expectedResult.equalsIgnoreCase("Valid")) {
+	            Assert.assertTrue(loginSuccess, "Valid login failed");
+	            signInPage.EnterEmail(email);
+		        signInPage.EnterPassword(password);
+		        signInPage.ClickSignin();
+
+	            String actualUrl = driver.getCurrentUrl();
+	            Assert.assertTrue(
+	                actualUrl.contains("/customer/account"),
+	                "User is not redirected to My Account page. Actual URL: " + actualUrl
+	            );
+
+	            Assert.assertTrue(header.isMyAccountVisible(), "My Account is not visible after login");
+
+	            logger.info("Valid login passed for user: " + email);
+	            ExtentReportManager.test.info("TC003 SignIn -> Valid login passed");
+
+	            header.SignOut();
+	        } else if (expectedResult.equalsIgnoreCase("Invalid")) {
+	        	 signInPage.EnterEmail(email);
+			        signInPage.EnterPassword(password);
+			        signInPage.ClickSignin();
+
+	            Assert.assertTrue(loginError, "Error message is not displayed for invalid login");
+	           
+	            String errorMessage = signInPage.getLoginErrorMessage();
+	            logger.info("Invalid login passed. Error message displayed: " + errorMessage);
+	            ExtentReportManager.test.info("TC003 SignIn -> Invalid login error displayed: " + errorMessage);
+	        } else {
+	            Assert.fail("Expected result must be only Valid or Invalid in Excel sheet");
+	        }
+	    }
+
+}

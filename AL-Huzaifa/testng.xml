@@ -8,7 +8,7 @@
         <parameter name="os" value="windows"/>
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="TestCase.TC001_Header"/>
+            <class name="TestCase.TC003_SigninPage"/>
         </classes>
     </test>
 </suite>

@@ -1,0 +1,141 @@
+package PageObject;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Footer extends BasePage{
+	public Footer(WebDriver driver)
+	{
+		super(driver);
+	}
+	
+	 @FindBy(xpath = "//footer")
+	 WebElement footerSection;
+	 	public void scrollToFooter() {
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", footerSection);
+	        waitForVisible(footerSection);
+	    }
+
+	    public boolean isFooterVisible() {
+	    	scrollToFooter();
+	        return isDisplayed(footerSection);
+	    }
+	    
+	 @FindBy(xpath = "(//a[@href='https://www.alhuzaifa.com/en/'])[3]")
+	 WebElement footerLogo;
+	 	public boolean isFooterLogoVisible() {
+	        scrollToFooter();
+	        return isDisplayed(footerLogo);
+	    }
+	 
+	 @FindBy(xpath = "//p[contains(text(),'Al Huzaifa Furniture (L.L.C)')]")
+	 WebElement companyName;
+	 	public boolean isCompanyNameVisible() {
+	        scrollToFooter();
+	        return isDisplayed(companyName);
+	    }
+	 	
+	 @FindBy(xpath = "//p[contains(text(),'Dubai')]")
+	 WebElement companyLocation;
+	 	public boolean isCompanyLocationVisible() {
+	        scrollToFooter();
+	        return isDisplayed(companyLocation);
+	 	}
+	 	
+	 @FindBy(xpath = "//a[contains(text(),'eshop@huzaifa1.ae')]")
+	 WebElement emailText;
+	 	public boolean isEmailVisible() {
+	        scrollToFooter();
+	        return isDisplayed(emailText);
+	    }
+	 	
+	 @FindBy(xpath = "//a[contains(text(),'600 575754')]")
+	 WebElement landlineText;
+	 	public boolean isLandlineVisible() {
+	        scrollToFooter();
+	        return isDisplayed(landlineText);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'+971 505598758')]")
+	 WebElement mobileText;
+	    public boolean isMobileVisible() {
+	        scrollToFooter();
+	        return isDisplayed(mobileText);
+	    }
+
+	 @FindBy(xpath = "//a[contains(@href,'facebook')]")
+	 WebElement facebookIcon;
+	    public boolean isFacebookVisible() {
+	        scrollToFooter();
+	        return isDisplayed(facebookIcon);
+	    }
+
+	    @FindBy(xpath = "//footer//a[contains(@href,'instagram')]")
+	    WebElement instagramIcon;
+
+	    @FindBy(xpath = "//footer//a[contains(@href,'youtube')]")
+	    WebElement youtubeIcon;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='Sofas']")
+	    WebElement sofasLink;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='Tables']")
+	    WebElement tablesLink;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='Beds']")
+	    WebElement bedsLink;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='Accessories']")
+	    WebElement accessoriesLink;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='Lighting']")
+	    WebElement lightingLink;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='Clearance']")
+	    WebElement clearanceLink;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='About us']")
+	    WebElement aboutUsLink;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='Design Studio']")
+	    WebElement designStudioLink;
+
+	    @FindBy(xpath = "//footer//a[contains(normalize-space(),'Creators Circle')]")
+	    WebElement creatorsCircleLink;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='Projects']")
+	    WebElement projectsLink;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='Careers']")
+	    WebElement careersLink;
+
+	    @FindBy(xpath = "//footer//a[contains(normalize-space(),'Journals')]")
+	    WebElement journalsLink;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='Contact us']")
+	    WebElement contactUsLink;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='FAQ']")
+	    WebElement faqLink;
+
+	    @FindBy(xpath = "//footer//a[contains(normalize-space(),'Terms & Conditions')]")
+	    WebElement termsAndConditionsLink;
+
+	    @FindBy(xpath = "//footer//a[contains(normalize-space(),'Returns & Exchange')]")
+	    WebElement returnsAndExchangeLink;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='Shipping']")
+	    WebElement shippingLink;
+
+	    @FindBy(xpath = "//footer//a[normalize-space()='Locations']")
+	    WebElement locationsLink;
+
+	    @FindBy(xpath = "//footer//a[contains(normalize-space(),'Cookies and Privacy Policy')]")
+	    WebElement cookiesAndPrivacyPolicyLink;
+
+	    @FindBy(xpath = "//footer//*[contains(text(),'All rights reserved')]")
+	    WebElement copyrightText;
+	 	
+}

@@ -1,0 +1,199 @@
+22:41:40.364 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+22:41:40.614 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+22:41:41.218 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+22:41:41.246 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+22:42:06.936 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+22:42:06.981 [main] INFO  TestCase.TC001_Header - Verifying About menu validation in Header
+22:42:07.088 [main] INFO  TestCase.TC001_Header - About menu is visible in header
+22:42:07.097 [main] INFO  TestCase.TC001_Header - Verifying Cart validation in Header
+22:42:07.180 [main] INFO  TestCase.TC001_Header - Cart is visible in header
+22:42:07.180 [main] INFO  TestCase.TC001_Header - Verifying Minicart
+22:42:07.886 [main] INFO  TestCase.TC001_Header - Mini cart is popup opens on click
+22:42:08.010 [main] INFO  TestCase.TC001_Header - Verifying Free Interior Design validation in Header
+22:42:08.071 [main] INFO  TestCase.TC001_Header - Free Interior Design is visible in header
+22:42:08.874 [main] INFO  TestCase.TC001_Header - Free Interior Design text validation passed
+22:42:08.878 [main] INFO  TestCase.TC001_Header - Verifying free shipping validation in Header
+22:42:08.935 [main] INFO  TestCase.TC001_Header - Free Shipping is visible in header
+22:42:09.117 [main] INFO  TestCase.TC001_Header - Free Shipping text validation passed
+22:42:09.137 [main] INFO  TestCase.TC001_Header - Verifying Ideas menu validation in Header
+22:42:09.195 [main] INFO  TestCase.TC001_Header - Ideas menu is visible in header
+22:42:09.195 [main] INFO  TestCase.TC001_Header - Verifying Payment Flexibility validation in Header
+22:42:09.258 [main] INFO  TestCase.TC001_Header - Payment Flexibility is visible in header
+22:42:09.486 [main] INFO  TestCase.TC001_Header - Payment Flexibility text validation passed
+22:42:09.497 [main] INFO  TestCase.TC001_Header - Verifying Search validation in Header
+22:42:09.548 [main] INFO  TestCase.TC001_Header - Search box is visible in header
+22:42:33.511 [main] INFO  TestCase.TC001_Header - Search validation passed
+22:42:33.517 [main] INFO  TestCase.TC001_Header - Verifying Shop menu validation in Header
+22:42:33.571 [main] INFO  TestCase.TC001_Header - Shop menu is visible in header
+22:42:56.829 [main] INFO  TestCase.TC001_Header - Shop menu redirection validation passed
+22:42:56.829 [main] INFO  TestCase.TC001_Header - Verifying Signin validation in Header
+22:42:56.889 [main] INFO  TestCase.TC001_Header - Signin is visible in header
+22:42:56.889 [main] INFO  TestCase.TC001_Header - Verifying Signin and Register Logo is present in header
+22:43:20.265 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/customer/account/login/referer/aHR0cHM6Ly93d3cuYWxodXphaWZhLmNvbS9lbi9jdXN0b21lci9hY2NvdW50L2luZGV4Lw~~/
+22:43:20.265 [main] INFO  TestCase.TC001_Header - Sign-In is Clicked and is landing on correct URL
+22:43:42.877 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/customer/account/create/
+22:43:42.877 [main] INFO  TestCase.TC001_Header - Register is Clicked and is landing on correct URL
+22:43:42.885 [main] INFO  TestCase.TC001_Header - Verifying Site Logo Design validation in Header
+22:43:42.931 [main] INFO  TestCase.TC001_Header - Site Logo is visible in header
+22:43:42.932 [main] INFO  TestCase.TC001_Header - Verifying Site Logo is Clickable & URL redirection
+22:44:05.552 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/
+22:44:05.552 [main] INFO  TestCase.TC001_Header - Site Logo is Clicked and is landing on correct URL
+22:44:05.558 [main] INFO  TestCase.TC001_Header - Verifying Warrenty validation in Header
+22:44:05.638 [main] INFO  TestCase.TC001_Header - Warranty is visible in header
+22:44:05.881 [main] INFO  TestCase.TC001_Header - Warrenty text validation passed
+22:44:05.894 [main] INFO  TestCase.TC001_Header - Verifying Wishlist validation in Header
+22:44:05.949 [main] INFO  TestCase.TC001_Header - Wishlist is visible in header
+22:44:05.949 [main] INFO  TestCase.TC001_Header - Verifying Wishlist Click and URL redirection
+22:44:29.194 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/customer/account/login/referer/aHR0cHM6Ly93d3cuYWxodXphaWZhLmNvbS9lbi93aXNobGlzdC8~/
+22:44:29.194 [main] INFO  TestCase.TC001_Header - Wishlist is Clicked and is landing on correct URL
+22:44:29.199 [main] INFO  TestCase.TC001_Header - Verifying Lanaguage Switcher validation in Header
+22:44:29.251 [main] INFO  TestCase.TC001_Header - Language Switcher is visible in header
+22:44:29.251 [main] INFO  TestCase.TC001_Header - Verifying Arabic site Redirection
+22:44:52.802 [main] INFO  TestCase.TC001_Header - Arabic site is Clicked and is landing on correct URL
+22:44:53.200 [main] INFO  TestCase.TC001_Header - Browser closed successfully
+15:48:29.766 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+15:48:30.122 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+15:48:32.165 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+15:48:32.186 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+15:49:09.684 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+15:49:09.752 [main] INFO  TestCase.TC001_Header - Verifying About menu validation in Header
+15:49:09.838 [main] INFO  TestCase.TC001_Header - About menu is visible in header
+15:49:09.852 [main] INFO  TestCase.TC001_Header - Verifying Cart validation in Header
+15:49:09.927 [main] INFO  TestCase.TC001_Header - Cart is visible in header
+15:49:09.928 [main] INFO  TestCase.TC001_Header - Verifying Minicart
+15:49:10.675 [main] INFO  TestCase.TC001_Header - Mini cart is popup opens on click
+15:49:10.786 [main] INFO  TestCase.TC001_Header - Verifying Free Interior Design validation in Header
+15:49:10.842 [main] INFO  TestCase.TC001_Header - Free Interior Design is visible in header
+15:49:11.659 [main] INFO  TestCase.TC001_Header - Free Interior Design text validation passed
+15:49:11.664 [main] INFO  TestCase.TC001_Header - Verifying free shipping validation in Header
+15:49:11.708 [main] INFO  TestCase.TC001_Header - Free Shipping is visible in header
+15:49:11.947 [main] INFO  TestCase.TC001_Header - Free Shipping text validation passed
+15:49:11.958 [main] INFO  TestCase.TC001_Header - Verifying Ideas menu validation in Header
+15:49:12.008 [main] INFO  TestCase.TC001_Header - Ideas menu is visible in header
+15:49:12.008 [main] INFO  TestCase.TC001_Header - Verifying Payment Flexibility validation in Header
+15:49:12.073 [main] INFO  TestCase.TC001_Header - Payment Flexibility is visible in header
+15:49:12.300 [main] INFO  TestCase.TC001_Header - Payment Flexibility text validation passed
+15:49:12.314 [main] INFO  TestCase.TC001_Header - Verifying Search validation in Header
+15:49:12.384 [main] INFO  TestCase.TC001_Header - Search box is visible in header
+15:49:15.614 [main] INFO  TestCase.TC001_Header - Search validation passed
+15:49:15.623 [main] INFO  TestCase.TC001_Header - Verifying Shop menu validation in Header
+15:49:15.749 [main] INFO  TestCase.TC001_Header - Shop menu is visible in header
+15:49:21.091 [main] INFO  TestCase.TC001_Header - Shop menu redirection validation passed
+15:49:21.091 [main] INFO  TestCase.TC001_Header - Verifying Signin validation in Header
+15:49:21.143 [main] INFO  TestCase.TC001_Header - Signin is visible in header
+15:49:21.143 [main] INFO  TestCase.TC001_Header - Verifying Signin and Register Logo is present in header
+15:49:23.792 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/customer/account/login/referer/aHR0cHM6Ly93d3cuYWxodXphaWZhLmNvbS9lbi9jdXN0b21lci9hY2NvdW50L2luZGV4Lw~~/
+15:49:23.792 [main] INFO  TestCase.TC001_Header - Sign-In is Clicked and is landing on correct URL
+15:49:26.160 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/customer/account/create/
+15:49:26.160 [main] INFO  TestCase.TC001_Header - Register is Clicked and is landing on correct URL
+15:49:26.171 [main] INFO  TestCase.TC001_Header - Verifying Site Logo Design validation in Header
+15:49:26.220 [main] INFO  TestCase.TC001_Header - Site Logo is visible in header
+15:49:26.220 [main] INFO  TestCase.TC001_Header - Verifying Site Logo is Clickable & URL redirection
+15:49:28.207 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/
+15:49:28.207 [main] INFO  TestCase.TC001_Header - Site Logo is Clicked and is landing on correct URL
+15:49:28.216 [main] INFO  TestCase.TC001_Header - Verifying Warrenty validation in Header
+15:49:28.400 [main] INFO  TestCase.TC001_Header - Warranty is visible in header
+15:49:28.645 [main] INFO  TestCase.TC001_Header - Warrenty text validation passed
+15:49:28.650 [main] INFO  TestCase.TC001_Header - Verifying Wishlist validation in Header
+15:49:28.721 [main] INFO  TestCase.TC001_Header - Wishlist is visible in header
+15:49:28.721 [main] INFO  TestCase.TC001_Header - Verifying Wishlist Click and URL redirection
+15:49:31.090 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/customer/account/login/referer/aHR0cHM6Ly93d3cuYWxodXphaWZhLmNvbS9lbi93aXNobGlzdC8~/
+15:49:31.090 [main] INFO  TestCase.TC001_Header - Wishlist is Clicked and is landing on correct URL
+15:49:31.091 [main] INFO  TestCase.TC001_Header - Verifying Lanaguage Switcher validation in Header
+15:49:31.133 [main] INFO  TestCase.TC001_Header - Language Switcher is visible in header
+15:49:31.133 [main] INFO  TestCase.TC001_Header - Verifying Arabic site Redirection
+15:49:33.689 [main] INFO  TestCase.TC001_Header - Arabic site is Clicked and is landing on correct URL
+15:49:34.023 [main] INFO  TestCase.TC001_Header - Browser closed successfully
+17:02:58.010 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+17:02:58.289 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+17:03:00.160 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+17:03:00.175 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+17:03:37.410 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+17:03:37.482 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+17:04:18.597 [main] INFO  TestCase.TC002_Footer - Browser closed successfully
+17:06:54.163 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+17:06:54.475 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+17:06:55.199 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+17:06:55.244 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+17:07:19.682 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+17:07:19.744 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+17:07:21.506 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+17:07:21.842 [main] INFO  TestCase.TC002_Footer - Browser closed successfully
+17:12:16.245 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+17:12:16.452 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+17:12:17.035 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+17:12:17.071 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+17:12:43.189 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+17:12:43.239 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+17:12:45.006 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+17:12:45.310 [main] INFO  TestCase.TC002_Footer - Browser closed successfully
+11:14:59.070 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+11:14:59.697 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+11:15:02.983 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+11:15:03.030 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+11:15:24.387 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+11:15:24.530 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+11:16:17.345 [main] INFO  TestCase.TC002_Footer - Footer category links validation passed
+11:16:17.362 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+11:16:21.106 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+11:16:21.767 [main] INFO  TestCase.TC002_Footer - Browser closed successfully
+11:18:24.682 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+11:18:25.373 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+11:18:26.782 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+11:18:26.841 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+11:18:43.325 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+11:18:43.426 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+11:19:30.041 [main] INFO  TestCase.TC002_Footer - Footer category links validation passed
+11:19:30.066 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+11:19:34.083 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+11:19:34.860 [main] INFO  TestCase.TC002_Footer - Browser closed successfully
+12:27:45.935 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+12:27:46.197 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+12:27:47.808 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+12:27:47.822 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+12:28:02.857 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+12:28:02.912 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+12:28:04.506 [main] INFO  TestCase.TC002_Footer - Verifying footer Company visibility and URL Validation
+12:28:06.008 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+12:28:07.777 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+12:28:08.160 [main] INFO  TestCase.TC002_Footer - Browser closed successfully
+12:28:32.233 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+12:28:32.449 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+12:28:33.104 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+12:28:33.133 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+12:28:50.202 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+12:28:50.249 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+12:28:51.965 [main] INFO  TestCase.TC002_Footer - Verifying footer Company visibility and URL Validation
+12:28:53.708 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+12:28:55.358 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+12:28:55.681 [main] INFO  TestCase.TC002_Footer - Browser closed successfully
+12:30:07.808 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+12:30:08.025 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+12:30:08.595 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+12:30:08.630 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+12:30:22.902 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+12:30:22.935 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+12:30:24.684 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+12:30:24.699 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+12:30:42.679 [main] INFO  TestCase.TC002_Footer - Verifying footer Company visibility and URL Validation
+12:31:05.838 [main] INFO  TestCase.TC002_Footer - Browser closed successfully

@@ -34,7 +34,7 @@ public class ExtentReportManager implements ITestListener {
 
 	        sparkReporter.config().setDocumentTitle("AlHuzaifa Automation Report");
 	        sparkReporter.config().setReportName("AlHuzaifa Sanity Test");
-	        sparkReporter.config().setTheme(Theme.DARK);
+	        sparkReporter.config().setTheme(Theme.STANDARD);
 
 	        extent = new ExtentReports();
 	        extent.attachReporter(sparkReporter);
@@ -125,5 +125,6 @@ public class ExtentReportManager implements ITestListener {
         //catch(Exception e){
         //e.printStackTrace();}
 	 }
+	 
 
 }

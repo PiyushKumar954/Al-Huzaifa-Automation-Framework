@@ -1,0 +1,115 @@
+package TestCase;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import PageObject.Header;
+import PageObject.SignIn;
+import TestBase.BaseClass;
+import Utilities.ExtentReportManager;
+
+public class TC003_SignIn extends BaseClass{
+	/*@Test(groups = {"Sanity"})
+    public void ASigninPageValidation()
+    {
+		Header header = new Header(driver);
+		header.Signin();
+		SignIn signin = new SignIn(driver);
+
+        logger.info("Verifying Signin Page visibility");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> SignIn Page visibility");
+
+        Assert.assertTrue(signin.isWelcomeTitleVisible(), "Welcome Title on Page is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> Welcome Title on Page is Visible");
+        
+        Assert.assertTrue(signin.isSignInHeadingVisible(), "SignIn Heading is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> SignIn Heading is visible");
+        
+        Assert.assertTrue(signin.isEmailFieldVisible(), "Email Field is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> Email Field is visible");
+        
+        Assert.assertTrue(signin.isEmailInputFieldVisible(), "Email Input Field is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> Email Input Filed is visible");
+        
+        Assert.assertTrue(signin.isPasswodFieldVisible(), "Password Field is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> Password Field is visible");
+        
+        Assert.assertTrue(signin.isPasswordInputFieldVisible(), "Password Input Field is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> Password Input Field is visible");
+        
+        Assert.assertTrue(signin.isViewPasswordVisible(), "View Password Icon is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> View Password Icon is visible");
+        
+        Assert.assertTrue(signin.isForgotPasswordVisible(), "Forgot Password URL is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> Forgot Password URL is visible");
+        
+        Assert.assertTrue(signin.isSigninButtonVisible(), "SignIn Button is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> SignIn Button is visible");
+        
+        Assert.assertTrue(signin.isNewtoSiteHeadingVisible(), "New on alhuzaifa.com? text is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> New on alhuzaifa.com? text is visible");
+        
+        Assert.assertTrue(signin.isRegisterButtonVisible(), "Register Button is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> Register Button is visible");
+        
+        logger.info("SignIn Page static content validation passed");
+    }*/
+	
+	@Test(dataProvider="LoginCredentials", dataProviderClass=DataProviders.class)
+	public void Signin(String Username, String Password, String Validity)
+	{
+
+		logger.info("*** Starting TC003_Signin Validation ***");
+		try {
+		Header header = new Header(driver);
+		SignIn signin = new SignIn(driver);
+		header.Signin();
+		
+		logger.info("Entering username and password");
+		signin.Email(Username);
+		signin.Password(Password);
+		signin.SigninButton();
+		
+		boolean isMyAccountVisible = header.isMyAccountVisible();
+		String currentUrl = driver.getCurrentUrl();
+		
+		if (Validity.equalsIgnoreCase("Valid"))
+    	{
+        logger.info("Valid scenario - verifying user lands on home page and My Account is visible");
+
+        Assert.assertTrue(currentUrl.equals("https://www.alhuzaifa.com/en/"),
+        "Valid login failed. User was not redirected to home page. Actual URL: " + currentUrl);
+
+        Assert.assertTrue(isMyAccountVisible,
+            "Valid login failed. 'My Account' is not visible after login.");
+
+        logger.info("User logged in successfully");
+
+        header.SignOut();
+        logger.info("User signed out successfully");
+    	}
+    	else if (Validity.equalsIgnoreCase("Invalid"))
+    	{
+        logger.info("Invalid scenario - verifying user is not logged in");
+
+        if (isMyAccountVisible)
+        {
+            header.SignOut();
+        }
+
+        Assert.assertFalse(isMyAccountVisible,
+            "Invalid login failed. User got logged in unexpectedly.");
+
+        Assert.assertFalse(currentUrl.equals("https://www.alhuzaifa.com/en/") && isMyAccountVisible,
+            "Invalid login failed. User landed on home page as logged-in user.");
+
+        logger.info("Invalid login scenario validated successfully");
+    	}
+    	else
+    	{
+        Assert.fail("Invalid test data. Validity must be either 'Valid' or 'Invalid'");
+    	}
+		
+	}
+
+}

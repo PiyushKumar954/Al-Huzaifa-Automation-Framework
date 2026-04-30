@@ -1,0 +1,81 @@
+package PageObject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class SignIn extends BasePage{
+	public SignIn(WebDriver driver)
+	{
+		super(driver);
+	}
+	
+	@FindBy(xpath = "//span[contains(text(),'Welcome')]")
+    WebElement WelcomeTitle;
+	public boolean isWelcomeTitleVisible() {
+        return isDisplayed(WelcomeTitle);
+    }
+	
+	@FindBy(xpath = "//h2[contains(text(),'Sign in')]")
+    WebElement signInHeading;
+	public boolean isSignInHeadingVisible() {
+        return isDisplayed(signInHeading);
+    }
+	
+	@FindBy(xpath = "//span[contains(text(),'Email')]")
+    WebElement emailField;
+	@FindBy(xpath = "//input[@name='login[username]']")
+    WebElement emailInputField;
+	public boolean isEmailFieldVisible() {
+        return isDisplayed(emailField);
+    }
+	public boolean isEmailInputFieldVisible() {
+        return isDisplayed(emailField);
+    }
+	public void Email(String Email)
+	{
+		emailInputField.sendKeys(Email);	
+	}
+	
+	@FindBy(xpath="(//span[contains(text(),'Password')])[1]")
+	WebElement PasswordField;
+	@FindBy(xpath="//input[@name='login[password]']")
+	WebElement PasswordInputField;
+	public boolean isPasswodFieldVisible() {
+        return isDisplayed(PasswordField);
+    }
+	public boolean isPasswordInputFieldVisible() {
+        return isDisplayed(PasswordInputField);
+    }
+	
+	@FindBy(xpath="//*[name()='svg' and @aria-labelledby='eyeIconTitle']")
+	WebElement PasswordView;
+	public boolean isViewPasswordVisible() {
+        return isDisplayed(PasswordView);
+    }
+	
+	@FindBy(xpath = "//a[@class='text-primary text-tn underline']")
+    WebElement forgotPasswordLink;
+	public boolean isForgotPasswordVisible() {
+        return isDisplayed(forgotPasswordLink);
+    }
+	
+	@FindBy(xpath = "//button[@class='pagebuilder-button-link']")
+    WebElement signInButton;
+	public boolean isSigninButtonVisible() {
+        return isDisplayed(signInButton);
+    }
+	
+	@FindBy(xpath = "//h2[@class='aboutus-s3__title text-primary mb-[24px]']")
+    WebElement newCustomerHeading;
+	public boolean isNewtoSiteHeadingVisible() {
+        return isDisplayed(newCustomerHeading);
+    }
+	
+	@FindBy(xpath = "(//a[@href='https://www.alhuzaifa.com/en/customer/account/create/'])[2]")
+    WebElement registerLink;
+	public boolean isRegisterButtonVisible() {
+        return isDisplayed(registerLink);
+    }
+
+}

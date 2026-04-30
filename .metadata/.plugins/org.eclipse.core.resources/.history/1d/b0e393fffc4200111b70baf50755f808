@@ -1,0 +1,285 @@
+package PageObject;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Footer extends BasePage{
+	public Footer(WebDriver driver)
+	{
+		super(driver);
+	}
+	
+	 @FindBy(xpath = "//footer")
+	 WebElement footerSection;
+	 	public void scrollToFooter() {
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", footerSection);
+	        waitForVisible(footerSection);
+	    }
+
+	    public boolean isFooterVisible() {
+	    	scrollToFooter();
+	        return isDisplayed(footerSection);
+	    }
+	    
+	 @FindBy(xpath = "(//a[@href='https://www.alhuzaifa.com/en/'])[2]")
+	 WebElement footerLogo;
+	 	public boolean isFooterLogoVisible() {
+	        scrollToFooter();
+	        return isDisplayed(footerLogo);
+	    }
+	 
+	 @FindBy(xpath = "//p[contains(text(),'Al Huzaifa Furniture (L.L.C)')]")
+	 WebElement companyName;
+	 	public boolean isCompanyNameVisible() {
+	        scrollToFooter();
+	        return isDisplayed(companyName);
+	    }
+	 	
+	 @FindBy(xpath = "//p[contains(text(),'Dubai')]")
+	 WebElement companyLocation;
+	 	public boolean isCompanyLocationVisible() {
+	        scrollToFooter();
+	        return isDisplayed(companyLocation);
+	 	}
+	 	
+	 @FindBy(xpath = "//a[contains(text(),'eshop@huzaifa1.ae')]")
+	 WebElement emailText;
+	 	public boolean isEmailVisible() {
+	        scrollToFooter();
+	        return isDisplayed(emailText);
+	    }
+	 	
+	 @FindBy(xpath = "//a[contains(text(),'600 575754')]")
+	 WebElement landlineText;
+	 	public boolean isLandlineVisible() {
+	        scrollToFooter();
+	        return isDisplayed(landlineText);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'+971 505598758')]")
+	 WebElement mobileText;
+	    public boolean isMobileVisible() {
+	        scrollToFooter();
+	        return isDisplayed(mobileText);
+	    }
+
+	 @FindBy(xpath = "//a[contains(@href,'facebook')]")
+	 WebElement facebookIcon;
+	    public boolean isFacebookVisible() {
+	        scrollToFooter();
+	        return isDisplayed(facebookIcon);
+	    }
+
+	 @FindBy(xpath = "//a[contains(@href,'instagram')]")
+	 WebElement instagramIcon;
+	    public boolean isInstagramVisible() {
+	        scrollToFooter();
+	        return isDisplayed(instagramIcon);
+	    }
+
+	 @FindBy(xpath = "//a[contains(@href,'youtube')]")
+	 WebElement youtubeIcon;
+	    public boolean isYoutubeVisible() {
+	        scrollToFooter();
+	        return isDisplayed(youtubeIcon);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Sofas')]")
+	 WebElement sofasLink;
+	    public boolean isSofaVisible() {
+	        scrollToFooter();
+	        return isDisplayed(sofasLink);
+	    }
+	    public void clickSofas() {
+	    	sofasLink.click();
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Tables')]")
+	 WebElement tablesLink;
+	    public boolean isTableVisible() {
+	        scrollToFooter();
+	        return isDisplayed(tablesLink);
+	    }
+	    public void clickTables() {
+	        click(tablesLink);
+	    }
+	    
+	 @FindBy(xpath = "//a[contains(text(),'Beds')]")
+	 WebElement bedsLink;
+	    public boolean isBedsVisible() {
+	        scrollToFooter();
+	        return isDisplayed(bedsLink);
+	    }
+	    public void clickBeds() {
+	        click(bedsLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Accessories')]")
+	 WebElement accessoriesLink;
+	    public boolean isAccessoriesVisible() {
+	        scrollToFooter();
+	        return isDisplayed(accessoriesLink);
+	    }
+	    public void clickAccessories() {
+	        click(accessoriesLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Lighting')]")
+	 WebElement lightingLink;
+	    public boolean isLightingVisible() {
+	        scrollToFooter();
+	        return isDisplayed(lightingLink);
+	    }
+	    public void clickLighting() {
+	        click(lightingLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Clearance')]")
+	 WebElement clearanceLink;
+	    public boolean isClearanceVisible() {
+	        scrollToFooter();
+	        return isDisplayed(clearanceLink);
+	    }
+	    public void clickClearance() {
+	        click(clearanceLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'About us')]")
+	 WebElement aboutUsLink;
+	    public boolean isAboutUsVisible() {
+	        scrollToFooter();
+	        return isDisplayed(aboutUsLink);
+	    }
+	    public void clickAboutUs() {
+	        click(aboutUsLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Design Studio')]")
+	 WebElement designStudioLink;
+	    public boolean isDesignStudioVisible() {
+	        scrollToFooter();
+	        return isDisplayed(designStudioLink);
+	    }
+	    public void clickDesignStudio() {
+	        click(designStudioLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Creators Circle')]")
+	 WebElement creatorsCircleLink;
+	    public boolean isCreatorCircleVisible() {
+	        scrollToFooter();
+	        return isDisplayed(creatorsCircleLink);
+	    }
+	    public void clickCreatorsCircle() {
+	        click(creatorsCircleLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Projects')]")
+	 WebElement projectsLink;
+	    public boolean isProjectsVisible() {
+	        scrollToFooter();
+	        return isDisplayed(projectsLink);
+	    }
+	    public void clickProjects() {
+	        click(projectsLink);
+	    }
+
+
+	 @FindBy(xpath = "//a[contains(text(),'Careers')]")
+	 WebElement careersLink;
+	    public boolean isCareersVisible() {
+	        scrollToFooter();
+	        return isDisplayed(careersLink);
+	    }
+	    public void clickCareers() {
+	        click(careersLink);
+	    }
+
+	 @FindBy(xpath = "//span[contains(text(),'Journals')]")
+	 WebElement journalsLink;
+	    public boolean isJournalsVisible() {
+	        scrollToFooter();
+	        return isDisplayed(journalsLink);
+	    }
+	    public void clickJournals() {
+	        click(journalsLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Contact us')]")
+	 WebElement contactUsLink;
+	    public boolean isContactUsVisible() {
+	        scrollToFooter();
+	        return isDisplayed(contactUsLink);
+	    }
+	    public void clickContactUs() {
+	        click(contactUsLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'FAQ')]")
+	 WebElement faqLink;
+	    public boolean isFAQVisible() {
+	        scrollToFooter();
+	        return isDisplayed(faqLink);
+	    }
+
+	    public void clickFaq() {
+	        click(faqLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Terms & Conditions')]")
+	 WebElement termsAndConditionsLink;
+	    public boolean isTermsConditionsVisible() {
+	        scrollToFooter();
+	        return isDisplayed(termsAndConditionsLink);
+	    }
+	    public void clickTermsAndConditions() {
+	        click(termsAndConditionsLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Returns & Exchange')]")
+	 WebElement returnsAndExchangeLink;
+	    public boolean isReturnExchnageVisible() {
+	        scrollToFooter();
+	        return isDisplayed(returnsAndExchangeLink);
+	    }
+	    public void clickReturnsAndExchange() {
+	        click(returnsAndExchangeLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Shipping')]")
+	 WebElement shippingLink;
+	    public boolean isShippingVisible() {
+	        scrollToFooter();
+	        return isDisplayed(shippingLink);
+	    }
+	    public void clickShipping() {
+	        click(shippingLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Locations')]")
+	 WebElement locationsLink;
+	    public boolean isLocationsVisible() {
+	        scrollToFooter();
+	        return isDisplayed(locationsLink);
+	    }
+	    public void clickLocations() {
+	        click(locationsLink);
+	    }
+
+	 @FindBy(xpath = "//a[contains(text(),'Cookies and Privacy Policy')]")
+	 WebElement cookiesAndPrivacyPolicyLink;
+	    public boolean isCookiesPrivacyPolicyVisible() {
+	        scrollToFooter();
+	        return isDisplayed(cookiesAndPrivacyPolicyLink);
+	    }
+
+	 @FindBy(xpath = "//div[contains(text(),'All rights reserved 2026')]")
+	 WebElement copyrightText;
+	    public boolean isCopyrightVisible() {
+	        scrollToFooter();
+	        return isDisplayed(cookiesAndPrivacyPolicyLink);
+	    }
+	 	
+}

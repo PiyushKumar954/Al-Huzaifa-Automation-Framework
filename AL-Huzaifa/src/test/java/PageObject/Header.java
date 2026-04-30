@@ -3,7 +3,6 @@ package PageObject;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 public class Header extends BasePage{
@@ -22,8 +21,7 @@ public class Header extends BasePage{
 	    }
 	 	public String getFreeShippingText()
 	    {
-	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(FreeShipping).perform();
+	 		hover(FreeShipping);
 	        return getText(FreeShippingText);
 	    }
 
@@ -37,8 +35,7 @@ public class Header extends BasePage{
 	    }
 		public String getWarrantyText()
 	    {
-	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(warrenty).perform();
+			hover(warrenty);
 	        return getText(WarrentyText);
 	    }
 
@@ -52,8 +49,7 @@ public class Header extends BasePage{
 	    }
 		public String getPaymentFlexibilityText()
 	    {
-	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(PaymentFlexibility).perform();
+	    	hover(PaymentFlexibility);
 	        return getText(PaymentFlexibilityText);
 	    }
 
@@ -67,8 +63,7 @@ public class Header extends BasePage{
 	    }
 		public String getFreeInteriorDesignText()
 	    {
-	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(FreeInteriorDesign).perform();
+	    	hover(FreeInteriorDesign);
 	        return getText(FreeInteriorDesignText);
 	    }
 	    
@@ -81,7 +76,7 @@ public class Header extends BasePage{
 	    
 	    public void clickLogo()
 	    {
-	    	SiteLogo.click();
+	    	 click(SiteLogo);
 	    }
 	    
 	    
@@ -89,23 +84,35 @@ public class Header extends BasePage{
 	WebElement SignInLogo;
 	@FindBy(xpath = "//a[contains(text(),'Sign In')]")
 	WebElement SignIn;
+	@FindBy(xpath = "//a[@id='customer.header.dashboard.link']")
+	WebElement myAccount;
 	@FindBy(xpath = "//a[contains(text(),'Create an Account')]")
 	WebElement Register;
+	@FindBy(xpath = "//a[@id='customer.header.sign.out.link']")
+	WebElement Signout;
 	    public boolean isSiginInLogoVisible()
 	    {
 	        return isDisplayed(SignInLogo);
 	    }
 	    public void Signin()
 	    {
-	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(SignInLogo).perform();
-	        SignIn.click();
+	    	hover(SignInLogo);
+	        click(SignIn);
+	    }
+	    public boolean isMyAccountVisible()
+	    {
+	    	hover(SignInLogo);
+	        return isDisplayed(myAccount);
 	    }
 	    public void Register()
 	    {
-	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(SignInLogo).perform();
-	        Register.click();
+	    	hover(SignInLogo);
+	        click(Register);
+	    }
+	    public void SignOut()
+	    {
+	    	hover(SignInLogo);
+	        click(Signout);
 	    }
 	    
 	@FindBy(xpath = "//a[@id='menu-wishlist-icon']")
@@ -116,9 +123,7 @@ public class Header extends BasePage{
 	    }
 	    public void Wishlist()
 	    {
-	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(Wishlist).perform();
-	        Wishlist.click();
+	    	click(Wishlist);
 	    }
 	    
 	@FindBy(xpath = "//span[normalize-space()='En']")
@@ -137,8 +142,7 @@ public class Header extends BasePage{
 	    }
 	    public void LangSwitch()
 	    {
-	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(EnaglishLanguage).perform();
+	    	hover(EnaglishLanguage);
 	        ArabicDropdown.click();
 	    }
 	    
@@ -181,8 +185,7 @@ public class Header extends BasePage{
 	    }
 	    public void openCountrySwitcher()
 	    {
-	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(uaeStore).perform();
+	    	hover(uaeStore);
 	        waitForVisible(ksaStore);
 	    }
 	    public void clickKsaStore()
@@ -192,26 +195,22 @@ public class Header extends BasePage{
 	    }
 	    public void QATAR()
 	    {
-	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(ksaStore).perform();
+	    	hover(ksaStore);
 	        qatarStore.click();
 	    }
 	    public void OMAN()
 	    {
-	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(qatarStore).perform();
+	    	hover(qatarStore);
 	        omanStore.click();
 	    }
 	    public void BAHRAIN()
 	    {
-	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(omanStore).perform();
+	    	hover(omanStore);
 	        bahrainStore.click();
 	    }
 	    public void Uae()
 	    {
-	    	Actions actions = new Actions(driver);
-	        actions.moveToElement(bahrainStore).perform();
+	    	hover(bahrainStore);
 	        uaeStore.click();
 	    }
 	    
@@ -250,7 +249,7 @@ public class Header extends BasePage{
     	}
     	public void OpenSearch()
 	    {
-    		SearchIcon.click();
+    		click(SearchIcon);
 	    }
     	public void searchForProduct(String productName)
     	{

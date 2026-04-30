@@ -1,0 +1,261 @@
+package TestCase;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import PageObject.Footer;
+import TestBase.BaseClass;
+import Utilities.ExtentReportManager;
+
+public class TC002_Footer extends BaseClass{
+	
+	@Test(groups = {"Sanity"})
+    public void AFooterSectionValidation()
+    {
+		Footer footer = new Footer(driver);
+
+        logger.info("Verifying Footer section visibility");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Footer section visibility");
+
+        Assert.assertTrue(footer.isFooterVisible(), "Footer section is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Footer section is Visible");
+        
+        Assert.assertTrue(footer.isFooterLogoVisible(), "Footer logo is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Footer logo is visible");
+        
+        Assert.assertTrue(footer.isCompanyNameVisible(), "Company name is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Company name is visible");
+        
+        Assert.assertTrue(footer.isCompanyLocationVisible(), "Company location is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Company Location is visible");
+        
+        Assert.assertTrue(footer.isEmailVisible(), "Email is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Email is visible");
+        
+        Assert.assertTrue(footer.isLandlineVisible(), "Landline number is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Landline number is visible");
+        
+        Assert.assertTrue(footer.isMobileVisible(), "Mobile number is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Mobile number is visible");
+        
+        Assert.assertTrue(footer.isCopyrightVisible(), "Copyright text is not visible");
+        ExtentReportManager.getTest().info("TC002 Footer Sanity -> Copyright content is visible");
+        
+        logger.info("Footer static content validation passed");
+    }
+	
+	@Test(groups = {"Sanity"})
+    public void BFooterCategoryLinksValidation() {
+        Footer footer = new Footer(driver);
+
+        logger.info("Verifying footer category links");
+        ExtentReportManager.getTest().info("TC002 Footer Sanity -> Footer category links validation");
+        
+        Assert.assertTrue(footer.isSofaVisible(), "Sofa Category is not visible");
+        ExtentReportManager.getTest().info(" Sofa Category is visible");
+        footer.clickSofas();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/shop/sofas/",
+                "Sofas link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Sofa Category Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isTableVisible(), "Table Category is not visible");
+        ExtentReportManager.getTest().info(" Table Category is visible");
+        footer.clickTables();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/shop/tables/",
+                "Table link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Tables Category Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isBedsVisible(), "Beds Category is not visible");
+        ExtentReportManager.getTest().info(" Beds Category is visible");
+        footer.clickBeds();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/shop/beds/",
+                "Beds link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Beds Category Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isAccessoriesVisible(), "Accessories Category is not visible");
+        ExtentReportManager.getTest().info(" Accessories Category is visible");
+        footer.clickAccessories();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/shop/accessories/",
+                "Accessories link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Accessories Category Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isLightingVisible(), "Lighting Category is not visible");
+        ExtentReportManager.getTest().info(" Lighting Category is visible");
+        footer.clickLighting();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/shop/lighting/",
+                "Lighting link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Lighting Category Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isClearanceVisible(), "Clearance Category is not visible");
+        ExtentReportManager.getTest().info(" Clearance Category is visible");
+        footer.clickClearance();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/shop/clearance/",
+                "Clearance link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Clearance Category Url redirection from Footer is correct");
+        driver.navigate().back();
+        logger.info("Footer category links validation passed");
+    }
+	
+	@Test(groups = {"Sanity"})
+    public void CFooterCompanyLinksValidation() {
+        Footer footer = new Footer(driver);
+
+        logger.info("Verifying footer Company visibility and URL Validation");
+        ExtentReportManager.getTest().info("TC002 Footer Sanity -> Footer Company visibility and URL validation");
+        
+        Assert.assertTrue(footer.isAboutUsVisible(), "About Us is not visible");
+        ExtentReportManager.getTest().info(" About Us is visible");
+        footer.clickAboutUs();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/about-us",
+                "About Us link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info(" About US Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isDesignStudioVisible(), "Design Studio is not visible");
+        ExtentReportManager.getTest().info(" Design Studio is visible");
+        footer.clickDesignStudio();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/design-studio",
+                "Design Studio link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Design Studio Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isCreatorCircleVisible(), "Creator Circle is not visible");
+        ExtentReportManager.getTest().info(" Creator Circle is visible");
+        footer.clickCreatorsCircle();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/creators-circle",
+                "Creator Circle link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Creator Circle Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isProjectsVisible(), "Projects is not visible");
+        ExtentReportManager.getTest().info(" Projects is visible");
+        footer.clickProjects();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/projects",
+                "Projects link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Projects Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isCareersVisible(), "Carrers is not visible");
+        ExtentReportManager.getTest().info(" Carrers is visible");
+        footer.clickCareers();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/careers",
+                "Carrers link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Carrers Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isJournalsVisible(), "Journals is not visible");
+        ExtentReportManager.getTest().info(" Journals is visible");
+        footer.clickJournals();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/blog",
+                "Journals link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Journals Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isContactUsVisible(), "Contact Us is not visible");
+        ExtentReportManager.getTest().info(" Contact US is visible");
+        footer.clickContactUs();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/contact",
+                "Contact US link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Contact Url redirection from Footer is correct");
+        driver.navigate().back();
+        logger.info("Footer company links validation passed");
+    }
+	
+	@Test(groups = {"Sanity"})
+    public void DFooterPolicyValidation() {
+        Footer footer = new Footer(driver);
+
+        logger.info("Verifying footer Policy visibility and URL Validation");
+        ExtentReportManager.getTest().info("TC002 Footer Sanity -> Footer Company Policy visibility and URL validation");
+        
+        Assert.assertTrue(footer.isFAQVisible(), "FAQ is not visible");
+        ExtentReportManager.getTest().info(" FAQ is visible");
+        footer.clickFaq();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/faq",
+                "FAQ link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("FAQ Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isTermsConditionsVisible(), "Terms and Conditions is not visible");
+        ExtentReportManager.getTest().info(" Terms and Conditions is visible");
+        footer.clickTermsAndConditions();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/terms-and-conditions",
+                "Terms and Conditions link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Terms and Conditions Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isReturnExchnageVisible(), "Return and Exchange is not visible");
+        ExtentReportManager.getTest().info(" Return and Exchange is visible");
+        footer.clickReturnsAndExchange();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/return-and-exchange-policy",
+                "Return and Exchange link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Return and Exchange Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isShippingVisible(), "Shipping Policy is not visible");
+        ExtentReportManager.getTest().info(" Shipping Policy is visible");
+        footer.clickShipping();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/shipping-policy",
+                "Shipping Policy link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Shipping Policy Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isLocationsVisible(), "Locations is not visible");
+        ExtentReportManager.getTest().info(" Locations is visible");
+        footer.clickLocations();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/contact#store-information",
+                "Locations link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Locations Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isCookiesPrivacyPolicyVisible(), "Cookie Privacy Policy is not visible");
+        ExtentReportManager.getTest().info(" Cookie Privacy Policy is visible");
+        footer.clickCookiesAndPrivacyPolicy();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.alhuzaifa.com/en/privacy-policy",
+                "Cookie Privacy Policy link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Cookie Privacy Policy Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        logger.info("Footer Company Policy links validation passed");
+    }
+	
+	@Test(groups = {"Sanity"})
+    public void EFooterSocilaMediaValidation() {
+        Footer footer = new Footer(driver);
+
+        logger.info("Verifying footer Social Media visibility and URL Validation");
+        ExtentReportManager.getTest().info("TC002 Footer Sanity -> Footer Social Media visibility and URL validation");
+        
+        Assert.assertTrue(footer.isFacebookVisible(), "Facebook is not visible");
+        ExtentReportManager.getTest().info(" Facebook is visible");
+        footer.clickFacebook();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.facebook.com/alhuzaifauae",
+                "Facebook link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Facebook Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isInstagramVisible(), "Instagram is not visible");
+        ExtentReportManager.getTest().info(" Instagram is visible");
+        footer.clickInstagram();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.instagram.com/alhuzaifauae/",
+                "Instagram link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Instagram Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isYoutubeVisible(), "Youtube is not visible");
+        ExtentReportManager.getTest().info(" Youtube is visible");
+        footer.clickYoutube();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.youtube.com/channel/UCRl7VQrKMiomZe4EforMxPA",
+                "Youtube link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.getTest().info("Youtube Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        logger.info("Footer Social Media validation passed");
+    }
+
+}

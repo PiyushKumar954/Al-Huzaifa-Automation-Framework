@@ -1,0 +1,26 @@
+package PageObject;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Footer extends BasePage{
+	public Footer(WebDriver driver)
+	{
+		super(driver);
+	}
+	
+	 @FindBy(xpath = "//footer")
+	 WebElement footerSection;
+	 public void scrollToFooter() {
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", footerSection);
+	        waitForVisible(footerSection);
+	    }
+
+	    public boolean isFooterVisible() {
+	        scrollToFooter();
+	        return isDisplayed(footerSection);
+	    }
+
+}

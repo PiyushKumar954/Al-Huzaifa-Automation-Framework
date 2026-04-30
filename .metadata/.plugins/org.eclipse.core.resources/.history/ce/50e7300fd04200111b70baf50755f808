@@ -1,0 +1,7 @@
+package TestCase;
+
+import TestBase.BaseClass;
+
+public class TC002_Footer extends BaseClass{
+
+}

@@ -1,0 +1,46 @@
+package TestCase;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import PageObject.Footer;
+import TestBase.BaseClass;
+import Utilities.ExtentReportManager;
+
+public class TC003_SignIn extends BaseClass{
+	/*@Test(groups = {"Sanity"})
+    public void ASigninPageValidation()
+    {
+		SignIn signin = new SignIn(driver);
+
+        logger.info("Verifying Signin Page visibility");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> SignIn Page visibility");
+
+        Assert.assertTrue(signin.isWelcomeTitleVisible(), "Welcome Title on Page is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> Welcome Title on Page is Visible");
+        
+        Assert.assertTrue(signin.isSignInHeadingVisible(), "SignIn Heading is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> SignIn Heading is visible");
+        
+        Assert.assertTrue(signin.isEmailFieldVisible(), "Email Field is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> Email Field is visible");
+        
+        Assert.assertTrue(signin.isEmailInputFieldVisible(), "Email Input Field is not visible");
+        ExtentReportManager.test.info("TC003 Signin Sanity -> Email Input Filed is visible");
+        
+        Assert.assertTrue(footer.isEmailVisible(), "Email is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Email is visible");
+        
+        Assert.assertTrue(footer.isLandlineVisible(), "Landline number is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Landline number is visible");
+        
+        Assert.assertTrue(footer.isMobileVisible(), "Mobile number is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Mobile number is visible");
+        
+        Assert.assertTrue(footer.isCopyrightVisible(), "Copyright text is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Copyright content is visible");
+        
+        logger.info("Footer static content validation passed");
+    }*/
+
+}

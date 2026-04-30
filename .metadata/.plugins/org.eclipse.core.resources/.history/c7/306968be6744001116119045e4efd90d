@@ -1,0 +1,78 @@
+12:25:56.635 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+12:25:56.852 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+12:26:10.089 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+12:26:10.293 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+12:26:12.872 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+12:26:12.895 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+12:26:39.593 [main] INFO  TestCase.TC003_SignIn - Application launched successfully in browser: chrome
+12:26:42.666 [main] INFO  TestCase.TC003_SignIn - Verifying Signin Page visibility
+12:26:44.798 [main] INFO  TestCase.TC003_SignIn - SignIn Page static content validation passed
+12:26:46.111 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+12:26:48.385 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+12:26:48.385 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: piyush.k@codilar.com
+12:26:48.385 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: test@codilar
+12:26:48.385 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: Invalid
+12:26:48.781 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+12:27:34.611 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+12:27:34.614 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+12:27:38.183 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+12:27:38.183 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: charan.r@codilar.com
+12:27:38.183 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: test@codilar
+12:27:38.183 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: Invalid
+12:27:38.575 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+12:28:24.012 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+12:28:24.017 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+12:28:27.210 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+12:28:27.212 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: piyush.k@codilar.com
+12:28:27.212 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: test@codilar2
+12:28:27.212 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: invalid
+12:28:27.605 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+12:29:12.319 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+12:29:12.321 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+12:29:15.247 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+12:29:15.247 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: piyush.k@codilar.com
+12:29:15.247 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: Piyush@123
+12:29:15.247 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: Valid
+12:29:15.657 [main] INFO  TestCase.TC003_SignIn - Valid scenario - verifying user lands on My Account page and dashboard is displayed
+12:29:16.396 [main] INFO  TestCase.TC003_SignIn - Browser closed successfully
+12:56:57.386 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+12:56:57.612 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+12:56:58.193 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+12:56:58.214 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+12:57:17.763 [main] INFO  TestCase.TC003_SignIn - Application launched successfully in browser: chrome
+12:57:20.457 [main] INFO  TestCase.TC003_SignIn - Verifying Signin Page visibility
+12:57:22.405 [main] INFO  TestCase.TC003_SignIn - SignIn Page static content validation passed
+12:57:23.612 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+12:57:25.797 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+12:57:25.800 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: piyush.k@codilar.com
+12:57:25.800 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: test@codilar
+12:57:25.800 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: Invalid
+12:57:26.219 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+12:58:11.626 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+12:58:11.630 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+12:58:14.694 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+12:58:14.694 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: charan.r@codilar.com
+12:58:14.694 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: test@codilar
+12:58:14.694 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: Invalid
+12:58:15.080 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+12:58:59.715 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+12:58:59.721 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+12:59:02.653 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+12:59:02.653 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: piyush.k@codilar.com
+12:59:02.653 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: test@codilar2
+12:59:02.654 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: invalid
+12:59:03.063 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+12:59:47.744 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+12:59:47.747 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+12:59:50.584 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+12:59:50.584 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: piyush.k@codilar.com
+12:59:50.584 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: Piyush@123
+12:59:50.584 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: Valid
+12:59:50.953 [main] INFO  TestCase.TC003_SignIn - Valid scenario - verifying user lands on My Account page and dashboard is displayed
+12:59:51.749 [main] INFO  TestCase.TC003_SignIn - Browser closed successfully

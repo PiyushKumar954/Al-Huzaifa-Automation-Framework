@@ -29,10 +29,11 @@ public class BaseClass {
 	
 	@BeforeClass
 	@Parameters({"os","browser"})
-	public void setup(String os, String br)
+	public void setup(String os, String browser)
 	{
 		logger = LogManager.getLogger(this.getClass());
-		switch(br.toLowerCase())
+		String baseUrl = System.getProperty("baseUrl", "https://www.alhuzaifa.com/en/");
+		switch(browser.toLowerCase())
 		{
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
@@ -47,17 +48,19 @@ public class BaseClass {
 			driver = new EdgeDriver();
 			break;
 		default :
-			throw new IllegalArgumentException("Invalid browser: " + br);
+			throw new IllegalArgumentException("Invalid browser: " + browser);
 		}
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ZERO);
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
-		driver.get("https://www.alhuzaifa.com/en/");
+        driver.get(baseUrl);
 		driver.manage().window().maximize();
 		
 		homepage= new HomePage(driver);
 		homepage.closeWelcomePopupIfDisplayed();
-		logger.info("Application launched successfully in browser: " + br);
+		logger.info("Application launched successfully in browser: " + browser);
 		
 	}
 	@AfterClass

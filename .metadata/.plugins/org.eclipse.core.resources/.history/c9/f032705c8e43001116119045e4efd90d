@@ -1,0 +1,106 @@
+package TestCase;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import PageObject.Footer;
+import TestBase.BaseClass;
+import Utilities.ExtentReportManager;
+
+public class TC002_Footer extends BaseClass{
+	
+	@Test(groups = {"Sanity"})
+    public void FooterSectionValidation()
+    {
+		Footer footer = new Footer(driver);
+
+        logger.info("Verifying Footer section visibility");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Footer section visibility");
+
+        Assert.assertTrue(footer.isFooterVisible(), "Footer section is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Footer section is Visible");
+        
+        Assert.assertTrue(footer.isFooterLogoVisible(), "Footer logo is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Footer logo is visible");
+        
+        Assert.assertTrue(footer.isCompanyNameVisible(), "Company name is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Company name is visible");
+        
+        Assert.assertTrue(footer.isCompanyLocationVisible(), "Company location is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Company Location is visible");
+        
+        Assert.assertTrue(footer.isEmailVisible(), "Email is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Email is visible");
+        
+        Assert.assertTrue(footer.isLandlineVisible(), "Landline number is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Landline number is visible");
+        
+        Assert.assertTrue(footer.isMobileVisible(), "Mobile number is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Mobile number is visible");
+        
+        Assert.assertTrue(footer.isFacebookVisible(), "Facebook icon is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity ->  Facebook Icon is visible");
+        
+        Assert.assertTrue(footer.isInstagramVisible(), "Instagram icon is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Instagram Icon is visible");
+        
+        Assert.assertTrue(footer.isYoutubeVisible(), "YouTube icon is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Youtube Icon is visible");
+        
+        Assert.assertTrue(footer.isCopyrightVisible(), "Copyright text is not visible");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Copyright content is visible");
+        
+        logger.info("Footer static content validation passed");
+    }
+	
+	/*@Test(groups = {"Sanity"})
+    public void FooterCategoryLinksValidation() {
+        Footer footer = new Footer(driver);
+
+        logger.info("Verifying footer category links");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Footer category links validation");
+        
+        Assert.assertTrue(footer.isSofaVisible(), "Sofa Category is not visible");
+        ExtentReportManager.test.info(" Sofa Category is visible");
+        footer.clickSofas();
+        Assert.assertEquals(driver.getCurrentUrl(),https://www.alhuzaifa.com/en/shop/sofas/,
+                "Sofas link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.test.info("Sofa Category Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isTableVisible(), "Table Category is not visible");
+        ExtentReportManager.test.info(" Table Category is visible");
+        footer.clickTables();
+        Assert.assertEquals(driver.getCurrentUrl(),https://www.alhuzaifa.com/en/shop/tables/,
+                "Table link redirection failed. Actual URL: " + driver.getCurrentUrl());
+        ExtentReportManager.test.info("Tables Category Url redirection from Footer is correct");
+        driver.navigate().back();
+        
+        Assert.assertTrue(footer.isTableVisible(), "Table Category is not visible");
+        ExtentReportManager.test.info(" Table Category is visible");
+        footer.clickBeds();
+        Assert.assertTrue(driver.getCurrentUrl().toLowerCase().contains("bed"),
+                "Beds link redirection failed. Actual URL: " + driver.getCurrentUrl());
+
+        driver.navigate().back();
+
+        footer.clickAccessories();
+        Assert.assertTrue(driver.getCurrentUrl().toLowerCase().contains("accessories"),
+                "Accessories link redirection failed. Actual URL: " + driver.getCurrentUrl());
+
+        driver.navigate().back();
+
+        footer.clickLighting();
+        Assert.assertTrue(driver.getCurrentUrl().toLowerCase().contains("lighting"),
+                "Lighting link redirection failed. Actual URL: " + driver.getCurrentUrl());
+
+        driver.navigate().back();
+
+        footer.clickClearance();
+        Assert.assertTrue(driver.getCurrentUrl().toLowerCase().contains("clearance"),
+                "Clearance link redirection failed. Actual URL: " + driver.getCurrentUrl());
+
+        logger.info("Footer category links validation passed");
+    }*/
+
+}

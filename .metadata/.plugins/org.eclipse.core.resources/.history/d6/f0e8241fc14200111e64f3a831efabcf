@@ -1,0 +1,7 @@
+package PageObject;
+
+import TestBase.BaseClass;
+
+public class Footer extends BasePage{
+
+}

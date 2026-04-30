@@ -1,0 +1,35 @@
+package TestCase;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import PageObject.Footer;
+import TestBase.BaseClass;
+import Utilities.ExtentReportManager;
+
+public class TC002_Footer extends BaseClass{
+	
+	@Test(groups = {"Sanity"})
+    public void FooterSectionValidation()
+    {
+		Footer footer = new Footer(driver);
+
+        /*logger.info("Verifying Footer section visibility");
+        ExtentReportManager.test.info("TC002 Footer Sanity -> Footer section visibility");
+
+        Assert.assertTrue(footer.isFooterVisible(), "Footer section is not visible");
+        Assert.assertTrue(footer.isFooterLogoVisible(), "Footer logo is not visible");
+        Assert.assertTrue(footer.isCompanyNameVisible(), "Company name is not visible");
+        Assert.assertTrue(footer.isCompanyLocationVisible(), "Company location is not visible");
+        Assert.assertTrue(footer.isEmailVisible(), "Email is not visible");
+        Assert.assertTrue(footer.isLandlineVisible(), "Landline number is not visible");
+        Assert.assertTrue(footer.isMobileVisible(), "Mobile number is not visible");
+        Assert.assertTrue(footer.isFacebookVisible(), "Facebook icon is not visible");
+        Assert.assertTrue(footer.isInstagramVisible(), "Instagram icon is not visible");
+        Assert.assertTrue(footer.isYoutubeVisible(), "YouTube icon is not visible");
+        Assert.assertTrue(footer.isCopyrightVisible(), "Copyright text is not visible");
+
+        logger.info("Footer static content validation passed");*/
+    }
+
+}

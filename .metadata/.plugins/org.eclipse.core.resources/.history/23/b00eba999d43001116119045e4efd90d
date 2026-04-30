@@ -1,0 +1,63 @@
+12:42:17.147 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+12:42:17.366 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+12:42:17.967 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+12:42:17.988 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+12:42:34.491 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+12:42:34.513 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+12:42:36.263 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+12:42:36.275 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+12:43:06.699 [main] INFO  TestCase.TC002_Footer - Footer category links validation passed
+12:43:06.708 [main] INFO  TestCase.TC002_Footer - Verifying footer Company visibility and URL Validation
+12:43:25.148 [main] INFO  TestCase.TC002_Footer - Browser closed successfully
+12:44:10.316 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+12:44:10.529 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+12:44:11.137 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+12:44:11.175 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+12:44:27.448 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+12:44:27.480 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+12:44:29.436 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+12:44:29.450 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+12:45:01.292 [main] INFO  TestCase.TC002_Footer - Footer category links validation passed
+12:45:01.302 [main] INFO  TestCase.TC002_Footer - Verifying footer Company visibility and URL Validation
+12:45:09.019 [main] INFO  TestCase.TC002_Footer - Browser closed successfully
+12:46:59.712 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+12:46:59.913 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+12:47:00.490 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+12:47:00.526 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+12:47:14.167 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+12:47:14.211 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+12:47:15.976 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+12:47:15.986 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+12:48:44.562 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+12:48:44.764 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+12:48:45.354 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+12:48:45.394 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+12:48:58.072 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+12:48:58.123 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+12:49:00.152 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+12:49:00.173 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+12:49:36.214 [main] INFO  TestCase.TC002_Footer - Footer category links validation passed
+12:49:36.228 [main] INFO  TestCase.TC002_Footer - Verifying footer Company visibility and URL Validation
+12:49:56.387 [main] INFO  TestCase.TC002_Footer - Browser closed successfully
+13:00:58.378 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+13:00:58.604 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+13:00:59.201 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+13:00:59.234 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+13:01:14.726 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+13:01:14.764 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+13:01:16.575 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+13:01:16.575 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+13:01:56.897 [main] INFO  TestCase.TC002_Footer - Footer category links validation passed
+13:01:56.905 [main] INFO  TestCase.TC002_Footer - Verifying footer Company visibility and URL Validation
+13:02:19.708 [main] INFO  TestCase.TC002_Footer - Footer company links validation passed
+13:02:20.233 [main] INFO  TestCase.TC002_Footer - Browser closed successfully

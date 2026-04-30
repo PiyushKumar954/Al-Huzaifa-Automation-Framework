@@ -1,0 +1,131 @@
+17:25:34.576 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+17:25:34.841 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+17:25:36.481 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+17:25:36.495 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+17:25:50.104 [main] INFO  TestCase.TC003_SignIn - Application launched successfully in browser: chrome
+17:25:52.542 [main] INFO  TestCase.TC003_SignIn - Verifying Signin Page visibility
+17:25:53.099 [main] INFO  TestCase.TC003_SignIn - SignIn Page static content validation passed
+17:25:53.401 [main] INFO  TestCase.TC003_SignIn - Browser closed successfully
+18:33:51.399 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+18:33:51.827 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+18:33:54.376 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+18:33:54.407 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+18:34:14.950 [main] INFO  TestCase.TC003_SignIn - Application launched successfully in browser: chrome
+18:34:15.475 [main] INFO  TestCase.TC003_SignIn - Browser closed successfully
+19:58:10.531 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+19:58:10.887 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+19:58:13.235 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+19:58:13.304 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+19:58:42.987 [main] INFO  TestCase.TC003_SignIn - Application launched successfully in browser: chrome
+19:58:47.666 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+19:59:12.481 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+20:00:23.671 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying user is not logged in
+20:00:23.681 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+20:00:23.728 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+20:00:48.812 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+20:02:10.599 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying user is not logged in
+20:02:10.601 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+20:02:10.612 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+20:02:34.927 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+20:03:43.565 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying user is not logged in
+20:03:43.565 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+20:03:43.580 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+20:04:07.664 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+20:05:16.133 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying user is not logged in
+20:05:16.133 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+20:05:16.147 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+20:05:40.721 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+20:06:49.109 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying user is not logged in
+20:06:49.109 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+20:06:49.123 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+20:07:13.937 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+20:08:21.980 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying user is not logged in
+20:08:21.980 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+20:08:22.002 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+20:08:46.420 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+20:09:14.729 [main] INFO  TestCase.TC003_SignIn - Valid scenario - verifying user lands on home page and My Account is visible
+20:09:16.061 [main] INFO  TestCase.TC003_SignIn - Browser closed successfully
+21:22:36.392 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+21:22:36.666 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+21:22:42.008 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+21:22:42.023 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+21:23:08.009 [main] INFO  TestCase.TC001_Header - Application launched successfully in browser: chrome
+21:23:08.108 [main] INFO  TestCase.TC001_Header - Verifying About menu validation in Header
+21:23:08.204 [main] INFO  TestCase.TC001_Header - About menu is visible in header
+21:23:08.220 [main] INFO  TestCase.TC001_Header - Verifying Cart validation in Header
+21:23:08.286 [main] INFO  TestCase.TC001_Header - Cart is visible in header
+21:23:08.286 [main] INFO  TestCase.TC001_Header - Verifying Minicart
+21:23:08.999 [main] INFO  TestCase.TC001_Header - Mini cart is popup opens on click
+21:23:09.140 [main] INFO  TestCase.TC001_Header - Verifying Free Interior Design validation in Header
+21:23:09.212 [main] INFO  TestCase.TC001_Header - Free Interior Design is visible in header
+21:23:10.118 [main] INFO  TestCase.TC001_Header - Free Interior Design text validation passed
+21:23:10.125 [main] INFO  TestCase.TC001_Header - Verifying free shipping validation in Header
+21:23:10.176 [main] INFO  TestCase.TC001_Header - Free Shipping is visible in header
+21:23:10.415 [main] INFO  TestCase.TC001_Header - Free Shipping text validation passed
+21:23:10.430 [main] INFO  TestCase.TC001_Header - Verifying Ideas menu validation in Header
+21:23:10.499 [main] INFO  TestCase.TC001_Header - Ideas menu is visible in header
+21:23:10.508 [main] INFO  TestCase.TC001_Header - Verifying Payment Flexibility validation in Header
+21:23:10.563 [main] INFO  TestCase.TC001_Header - Payment Flexibility is visible in header
+21:23:10.811 [main] INFO  TestCase.TC001_Header - Payment Flexibility text validation passed
+21:23:10.811 [main] INFO  TestCase.TC001_Header - Verifying Search validation in Header
+21:23:10.877 [main] INFO  TestCase.TC001_Header - Search box is visible in header
+21:23:34.783 [main] INFO  TestCase.TC001_Header - Search validation passed
+21:23:34.791 [main] INFO  TestCase.TC001_Header - Verifying Shop menu validation in Header
+21:23:34.843 [main] INFO  TestCase.TC001_Header - Shop menu is visible in header
+21:23:58.093 [main] INFO  TestCase.TC001_Header - Shop menu redirection validation passed
+21:23:58.097 [main] INFO  TestCase.TC001_Header - Verifying Signin validation in Header
+21:23:58.145 [main] INFO  TestCase.TC001_Header - Signin is visible in header
+21:23:58.146 [main] INFO  TestCase.TC001_Header - Verifying Signin and Register Logo is present in header
+21:24:21.453 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/customer/account/login/referer/aHR0cHM6Ly93d3cuYWxodXphaWZhLmNvbS9lbi9jdXN0b21lci9hY2NvdW50L2luZGV4Lw~~/
+21:24:21.454 [main] INFO  TestCase.TC001_Header - Sign-In is Clicked and is landing on correct URL
+21:24:44.150 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/customer/account/create/
+21:24:44.150 [main] INFO  TestCase.TC001_Header - Register is Clicked and is landing on correct URL
+21:24:44.161 [main] INFO  TestCase.TC001_Header - Verifying Site Logo Design validation in Header
+21:24:44.208 [main] INFO  TestCase.TC001_Header - Site Logo is visible in header
+21:24:44.208 [main] INFO  TestCase.TC001_Header - Verifying Site Logo is Clickable & URL redirection
+21:25:06.942 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/
+21:25:06.942 [main] INFO  TestCase.TC001_Header - Site Logo is Clicked and is landing on correct URL
+21:25:06.952 [main] INFO  TestCase.TC001_Header - Verifying Warrenty validation in Header
+21:25:07.023 [main] INFO  TestCase.TC001_Header - Warranty is visible in header
+21:25:07.332 [main] INFO  TestCase.TC001_Header - Warrenty text validation passed
+21:25:07.332 [main] INFO  TestCase.TC001_Header - Verifying Wishlist validation in Header
+21:25:07.391 [main] INFO  TestCase.TC001_Header - Wishlist is visible in header
+21:25:07.391 [main] INFO  TestCase.TC001_Header - Verifying Wishlist Click and URL redirection
+21:25:30.789 [main] INFO  TestCase.TC001_Header - URL validation passed. Actual URL: https://www.alhuzaifa.com/en/customer/account/login/referer/aHR0cHM6Ly93d3cuYWxodXphaWZhLmNvbS9lbi93aXNobGlzdC8~/
+21:25:30.790 [main] INFO  TestCase.TC001_Header - Wishlist is Clicked and is landing on correct URL
+21:25:30.796 [main] INFO  TestCase.TC001_Header - Verifying Lanaguage Switcher validation in Header
+21:25:30.847 [main] INFO  TestCase.TC001_Header - Language Switcher is visible in header
+21:25:30.848 [main] INFO  TestCase.TC001_Header - Verifying Arabic site Redirection
+21:25:54.964 [main] INFO  TestCase.TC001_Header - Arabic site is Clicked and is landing on correct URL
+21:25:55.448 [main] INFO  TestCase.TC001_Header - Browser closed successfully
+21:54:02.224 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+21:54:02.453 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+21:54:03.049 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+21:54:03.072 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+21:55:29.959 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+21:55:30.163 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+21:55:30.752 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+21:55:30.787 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+21:56:01.890 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+21:56:01.921 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+21:56:03.442 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+21:56:03.466 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+21:57:14.753 [main] INFO  TestCase.TC002_Footer - Footer category links validation passed
+21:57:14.761 [main] INFO  TestCase.TC002_Footer - Verifying footer Company visibility and URL Validation
+21:58:27.115 [main] INFO  TestCase.TC002_Footer - Verifying footer Policy visibility and URL Validation
+21:59:45.835 [main] INFO  TestCase.TC002_Footer - Footer Company Policy links validation passed
+21:59:45.846 [main] INFO  TestCase.TC002_Footer - Verifying footer Social Media visibility and URL Validation
+22:00:22.794 [main] INFO  TestCase.TC002_Footer - Footer Social Media validation passed
+22:00:23.357 [main] INFO  TestCase.TC002_Footer - Browser closed successfully

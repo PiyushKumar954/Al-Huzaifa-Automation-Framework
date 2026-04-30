@@ -1,0 +1,155 @@
+22:01:46.639 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+22:01:46.846 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+22:01:47.445 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+22:01:47.473 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+22:02:04.717 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+22:02:04.754 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+22:02:06.183 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+22:02:06.196 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+22:02:51.084 [main] INFO  TestCase.TC002_Footer - Footer category links validation passed
+22:02:51.088 [main] INFO  TestCase.TC002_Footer - Verifying footer Company visibility and URL Validation
+22:04:10.549 [main] INFO  TestCase.TC002_Footer - Verifying footer Policy visibility and URL Validation
+22:04:12.061 [main] INFO  TestCase.TC002_Footer - Verifying footer Social Media visibility and URL Validation
+22:04:13.936 [main] INFO  TestCase.TC002_Footer - Browser closed successfully
+22:06:01.669 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+22:06:01.879 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+22:06:02.438 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+22:06:02.459 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+22:06:14.787 [main] INFO  TestCase.TC003_SignIn - Application launched successfully in browser: chrome
+22:06:16.751 [main] INFO  TestCase.TC003_SignIn - Verifying Signin Page visibility
+22:06:17.294 [main] INFO  TestCase.TC003_SignIn - SignIn Page static content validation passed
+22:06:17.674 [main] INFO  TestCase.TC003_SignIn - Browser closed successfully
+10:49:28.263 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+10:49:28.632 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+10:49:30.805 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+10:49:30.826 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+10:49:50.193 [main] INFO  TestCase.TC003_SignIn - Application launched successfully in browser: chrome
+10:49:53.038 [main] INFO  TestCase.TC003_SignIn - Verifying Signin Page visibility
+10:49:55.080 [main] INFO  TestCase.TC003_SignIn - SignIn Page static content validation passed
+10:49:56.984 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+10:49:58.752 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+10:50:00.906 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+10:50:01.271 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+10:50:46.790 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+10:50:46.797 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+10:50:49.256 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+10:50:49.643 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+10:51:34.610 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+10:51:34.615 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+10:51:37.786 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+10:51:38.208 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+10:52:23.183 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+10:52:23.191 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+10:52:25.818 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+10:52:26.186 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+10:53:10.849 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+10:53:10.855 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+10:53:13.947 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+10:53:14.357 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+10:54:00.273 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+10:54:00.277 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+10:54:09.111 [main] INFO  TestCase.TC003_SignIn - Browser closed successfully
+11:06:55.689 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+11:06:55.698 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+11:06:55.699 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:06:55.700 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:06:55.700 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:06:55.700 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:06:55.701 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:06:55.701 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:06:55.709 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
+11:06:55.720 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 11 ms.
+11:06:55.721 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:06:55.721 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:06:55.723 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:06:55.723 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:06:55.724 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:06:55.724 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:06:55.727 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:06:55.727 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:06:55.728 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:06:55.728 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:06:55.730 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:06:55.730 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:06:55.731 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:06:55.731 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:06:55.732 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+11:06:55.738 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
+11:06:55.740 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:06:55.740 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:06:55.740 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:06:55.740 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:06:55.747 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\smile\AppData\Local\Temp\testng-eclipse-470937954\testng-customsuite.xml
+
+11:06:55.767 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+11:06:57.294 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@6fd1660: 65 ms
+11:06:57.312 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@159a48a6: 17 ms
+11:06:57.329 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@705f83a7: 17 ms
+11:06:57.340 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@57d0fc89: 10 ms
+11:06:57.347 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@29ea78b1: 7 ms
+11:06:57.348 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@2d2acd89: 1 ms
+11:07:12.308 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+11:07:12.526 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+11:07:13.132 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+11:07:13.157 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+11:07:32.716 [main] INFO  TestCase.TC003_SignIn - Application launched successfully in browser: chrome
+11:07:35.233 [main] INFO  TestCase.TC003_SignIn - Verifying Signin Page visibility
+11:07:37.275 [main] INFO  TestCase.TC003_SignIn - SignIn Page static content validation passed
+11:07:38.806 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+11:07:40.940 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+11:07:40.940 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: piyush.k@codilar.com
+11:07:40.941 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: test@codilar
+11:07:40.941 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: Invalid
+11:07:41.392 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+11:08:26.642 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+11:08:26.651 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+11:08:29.928 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+11:08:29.928 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: charan.r@codilar.com
+11:08:29.928 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: test@codilar
+11:08:29.928 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: Invalid
+11:08:30.290 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+11:09:14.936 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+11:09:14.949 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+11:09:18.137 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+11:09:18.137 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: deepthi.b@codilar.com
+11:09:18.137 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: test@codilar
+11:09:18.137 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: invalid
+11:09:18.515 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+11:10:03.117 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+11:10:03.121 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+11:10:05.830 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+11:10:05.830 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: piyush.k@codilar.com
+11:10:05.830 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: piyush@codilar
+11:10:05.830 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: invalid
+11:10:06.228 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+11:10:50.901 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+11:10:50.903 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+11:10:53.539 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+11:10:53.539 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: piyush.k@codilar.com
+11:10:53.540 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: test@codilar1
+11:10:53.540 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: invalid
+11:10:53.918 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+11:11:38.668 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+11:11:38.674 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+11:11:41.779 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+11:11:41.780 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: piyush.k@codilar.com
+11:11:41.780 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: test@codilar2
+11:11:41.780 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: invalid
+11:11:42.185 [main] INFO  TestCase.TC003_SignIn - Invalid scenario - verifying error message is displayed
+11:12:26.851 [main] INFO  TestCase.TC003_SignIn - Invalid login scenario validated successfully
+11:12:26.857 [main] INFO  TestCase.TC003_SignIn - *** Starting TC003_Signin Validation ***
+11:12:29.637 [main] INFO  TestCase.TC003_SignIn - Entering username and password
+11:12:29.637 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Email: piyush.k@codilar.com
+11:12:29.638 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Password: Piyush@123
+11:12:29.638 [main] INFO  TestCase.TC003_SignIn - Test data from sheet -> Validity: Valid
+11:12:30.276 [main] INFO  TestCase.TC003_SignIn - Valid scenario - verifying user lands on My Account page and dashboard is displayed
+11:12:31.028 [main] INFO  TestCase.TC003_SignIn - Browser closed successfully

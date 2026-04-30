@@ -1,0 +1,34 @@
+14:55:33.476 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+14:55:33.717 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+14:55:35.072 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+14:55:35.087 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+14:55:47.455 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+14:55:47.521 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+14:55:49.327 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+14:55:49.337 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+14:56:22.473 [main] INFO  TestCase.TC002_Footer - Footer category links validation passed
+14:56:22.484 [main] INFO  TestCase.TC002_Footer - Verifying footer Company visibility and URL Validation
+14:56:45.623 [main] INFO  TestCase.TC002_Footer - Footer company links validation passed
+14:56:45.628 [main] INFO  TestCase.TC002_Footer - Verifying footer Policy visibility and URL Validation
+14:57:06.213 [main] INFO  TestCase.TC002_Footer - Footer Company Policy links validation passed
+14:57:06.741 [main] INFO  TestCase.TC002_Footer - Browser closed successfully
+15:12:09.987 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+15:12:10.209 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Al_Huzaifa\AL-Huzaifa\testng.xml
+
+15:12:10.835 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+15:12:10.874 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\smile\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+15:12:25.916 [main] INFO  TestCase.TC002_Footer - Application launched successfully in browser: chrome
+15:12:25.978 [main] INFO  TestCase.TC002_Footer - Verifying Footer section visibility
+15:12:27.427 [main] INFO  TestCase.TC002_Footer - Footer static content validation passed
+15:12:27.444 [main] INFO  TestCase.TC002_Footer - Verifying footer category links
+15:12:57.003 [main] INFO  TestCase.TC002_Footer - Footer category links validation passed
+15:12:57.013 [main] INFO  TestCase.TC002_Footer - Verifying footer Company visibility and URL Validation
+15:13:20.858 [main] INFO  TestCase.TC002_Footer - Footer company links validation passed
+15:13:20.877 [main] INFO  TestCase.TC002_Footer - Verifying footer Policy visibility and URL Validation
+15:13:40.511 [main] INFO  TestCase.TC002_Footer - Footer Company Policy links validation passed
+15:13:40.515 [main] INFO  TestCase.TC002_Footer - Verifying footer Social Media visibility and URL Validation
+15:13:55.330 [main] INFO  TestCase.TC002_Footer - Footer Social Media validation passed
+15:13:55.899 [main] INFO  TestCase.TC002_Footer - Browser closed successfully
